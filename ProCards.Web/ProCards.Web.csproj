@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
+        <PackageReference Include="MySql.EntityFrameworkCore" Version="6.0.7" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ProCards.Core\ProCards.Core.csproj" />
+      <ProjectReference Include="..\ProCards.Infrastructure\ProCards.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>

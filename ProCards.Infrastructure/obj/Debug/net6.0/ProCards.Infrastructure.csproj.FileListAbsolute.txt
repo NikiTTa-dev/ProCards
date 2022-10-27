@@ -1,0 +1,12 @@
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Infrastructure\bin\Debug\net6.0\ProCards.Infrastructure.deps.json
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Infrastructure\bin\Debug\net6.0\ProCards.Infrastructure.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Infrastructure\bin\Debug\net6.0\ProCards.Infrastructure.pdb
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Infrastructure\obj\Debug\net6.0\ProCards.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Infrastructure\obj\Debug\net6.0\ProCards.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Infrastructure\obj\Debug\net6.0\ProCards.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Infrastructure\obj\Debug\net6.0\ProCards.Infrastructure.AssemblyInfo.cs
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Infrastructure\obj\Debug\net6.0\ProCards.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Infrastructure\obj\Debug\net6.0\ProCards.Infrastructure.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Infrastructure\obj\Debug\net6.0\refint\ProCards.Infrastructure.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Infrastructure\obj\Debug\net6.0\ProCards.Infrastructure.pdb
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Infrastructure\obj\Debug\net6.0\ref\ProCards.Infrastructure.dll
