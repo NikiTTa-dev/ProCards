@@ -12,7 +12,13 @@
 
     <ItemGroup>
       <ProjectReference Include="..\ProCards.Core\ProCards.Core.csproj" />
-      <ProjectReference Include="..\ProCards.Infrastructure\ProCards.Infrastructure.csproj" />
+      <ProjectReference Include="..\ProCards.DAL\ProCards.DAL.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Views" />
+      <Folder Include="wwwroot\css" />
+      <Folder Include="wwwroot\js" />
     </ItemGroup>
 
 </Project>

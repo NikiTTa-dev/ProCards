@@ -4,8 +4,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ProCards.Infrastructure.Data;
-using ProCards.Infrastructure;
+using ProCards.DAL;
+using ProCards.DAL.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 

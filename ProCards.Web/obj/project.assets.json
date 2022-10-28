@@ -568,7 +568,8 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.10",
-          "MySql.EntityFrameworkCore": "6.0.7"
+          "MySql.EntityFrameworkCore": "6.0.7",
+          "ProCards.DAL": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ProCards.Core.dll": {}
@@ -577,7 +578,7 @@
           "bin/placeholder/ProCards.Core.dll": {}
         }
       },
-      "ProCards.Infrastructure/1.0.0": {
+      "ProCards.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -585,10 +586,10 @@
           "MySql.EntityFrameworkCore": "6.0.7"
         },
         "compile": {
-          "bin/placeholder/ProCards.Infrastructure.dll": {}
+          "bin/placeholder/ProCards.DAL.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ProCards.Infrastructure.dll": {}
+          "bin/placeholder/ProCards.DAL.dll": {}
         }
       }
     }
@@ -1619,10 +1620,10 @@
       "path": "../ProCards.Core/ProCards.Core.csproj",
       "msbuildProject": "../ProCards.Core/ProCards.Core.csproj"
     },
-    "ProCards.Infrastructure/1.0.0": {
+    "ProCards.DAL/1.0.0": {
       "type": "project",
-      "path": "../ProCards.Infrastructure/ProCards.Infrastructure.csproj",
-      "msbuildProject": "../ProCards.Infrastructure/ProCards.Infrastructure.csproj"
+      "path": "../ProCards.DAL/ProCards.DAL.csproj",
+      "msbuildProject": "../ProCards.DAL/ProCards.DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1630,7 +1631,7 @@
       "Microsoft.EntityFrameworkCore >= 6.0.10",
       "MySql.EntityFrameworkCore >= 6.0.7",
       "ProCards.Core >= 1.0.0",
-      "ProCards.Infrastructure >= 1.0.0",
+      "ProCards.DAL >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -1669,8 +1670,8 @@
             "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Core\\ProCards.Core.csproj": {
               "projectPath": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Core\\ProCards.Core.csproj"
             },
-            "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Infrastructure\\ProCards.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Infrastructure\\ProCards.Infrastructure.csproj"
+            "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.DAL\\ProCards.DAL.csproj": {
+              "projectPath": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.DAL\\ProCards.DAL.csproj"
             }
           }
         }
