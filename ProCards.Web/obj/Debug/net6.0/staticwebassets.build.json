@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aBsy+w81ujQjHuuzUbd0m/P+Cw0+1uPhVtw5czFWV8Q=",
+  "Hash": "pBV2y6ofgNeyZHnNXbXwprX80UNEvxOe6WUQpP3rNNE=",
   "Source": "ProCards.Web",
   "BasePath": "_content/ProCards.Web",
   "Mode": "Default",
@@ -15,40 +15,5 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [
-    {
-      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\css\\style.css",
-      "SourceId": "ProCards.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
-      "BasePath": "_content/ProCards.Web",
-      "RelativePath": "css/style.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\style.css"
-    },
-    {
-      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\js\\main.js",
-      "SourceId": "ProCards.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
-      "BasePath": "_content/ProCards.Web",
-      "RelativePath": "js/main.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\main.js"
-    }
-  ]
+  "Assets": []
 }

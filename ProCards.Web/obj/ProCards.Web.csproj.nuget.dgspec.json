@@ -31,7 +31,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.DAL\\ProCards.DAL.csproj": {
+                "projectPath": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.DAL\\ProCards.DAL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -73,14 +77,14 @@
         }
       }
     },
-    "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Infrastructure\\ProCards.Infrastructure.csproj": {
+    "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.DAL\\ProCards.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Infrastructure\\ProCards.Infrastructure.csproj",
-        "projectName": "ProCards.Infrastructure",
-        "projectPath": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Infrastructure\\ProCards.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.DAL\\ProCards.DAL.csproj",
+        "projectName": "ProCards.DAL",
+        "projectPath": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.DAL\\ProCards.DAL.csproj",
         "packagesPath": "C:\\Users\\nikit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -173,8 +177,8 @@
               "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Core\\ProCards.Core.csproj": {
                 "projectPath": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Core\\ProCards.Core.csproj"
               },
-              "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Infrastructure\\ProCards.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Infrastructure\\ProCards.Infrastructure.csproj"
+              "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.DAL\\ProCards.DAL.csproj": {
+                "projectPath": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.DAL\\ProCards.DAL.csproj"
               }
             }
           }

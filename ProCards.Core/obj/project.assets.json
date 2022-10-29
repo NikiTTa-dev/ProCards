@@ -491,6 +491,20 @@
             "rid": "win"
           }
         }
+      },
+      "ProCards.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.10",
+          "MySql.EntityFrameworkCore": "6.0.7"
+        },
+        "compile": {
+          "bin/placeholder/ProCards.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProCards.DAL.dll": {}
+        }
       }
     }
   },
@@ -1389,12 +1403,18 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ProCards.DAL/1.0.0": {
+      "type": "project",
+      "path": "../ProCards.DAL/ProCards.DAL.csproj",
+      "msbuildProject": "../ProCards.DAL/ProCards.DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 6.0.10",
-      "MySql.EntityFrameworkCore >= 6.0.7"
+      "MySql.EntityFrameworkCore >= 6.0.7",
+      "ProCards.DAL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1428,7 +1448,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.DAL\\ProCards.DAL.csproj": {
+              "projectPath": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.DAL\\ProCards.DAL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

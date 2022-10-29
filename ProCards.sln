@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProCards.Web", "ProCards.We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProCards.Core", "ProCards.Core\ProCards.Core.csproj", "{F96CE0FB-D4A7-4EB3-B743-43771CBE9637}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProCards.Infrastructure", "ProCards.Infrastructure\ProCards.Infrastructure.csproj", "{046C7FA1-2DCA-441B-9FB8-497B4070DE5F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProCards.DAL", "ProCards.DAL\ProCards.DAL.csproj", "{046C7FA1-2DCA-441B-9FB8-497B4070DE5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

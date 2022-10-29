@@ -11,7 +11,7 @@
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "MySql.EntityFrameworkCore": "6.0.7",
           "ProCards.Core": "1.0.0",
-          "ProCards.Infrastructure": "1.0.0",
+          "ProCards.DAL": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -379,19 +379,20 @@
       "ProCards.Core/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.10",
-          "MySql.EntityFrameworkCore": "6.0.7"
+          "MySql.EntityFrameworkCore": "6.0.7",
+          "ProCards.DAL": "1.0.0"
         },
         "runtime": {
           "ProCards.Core.dll": {}
         }
       },
-      "ProCards.Infrastructure/1.0.0": {
+      "ProCards.DAL/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.10",
           "MySql.EntityFrameworkCore": "6.0.7"
         },
         "runtime": {
-          "ProCards.Infrastructure.dll": {}
+          "ProCards.DAL.dll": {}
         }
       }
     }
@@ -694,7 +695,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "ProCards.Infrastructure/1.0.0": {
+    "ProCards.DAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
