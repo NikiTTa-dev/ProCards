@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="../css/mainStyle.css" rel="stylesheet">
+    <link href="../css/learnStyle.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/outline-settings.css">
+    <link rel="stylesheet" href="css/outline.css"> -->
+    <title>Procards</title>
+</head>
+
+<body>
+    <header>
+        <p class="logo">PROCARDS</p>
+        <nav>
+            <ul class="header-nav">
+                <li><a href="main.html">ГЛАВНАЯ</a></li>
+                <li><a href="#" class="curent">ОБУЧЕНИЕ</a></li>
+                <li><a href="create.html">СОЗДАТЬ КАРТОЧКИ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h2>Выберите категорию для обучения</h2>
+            <section class="categories">
+                <h3>Категории</h3>
+                <ul class="cards">
+                    <li>
+                        <label>
+                            <span>Алгебра</span>
+                            <input name="category" type="radio">
+                        </label>
+                        <!-- <button class="card">Алгебра</button> -->
+                    </li>
+                    <li>
+                        <label>
+                            <span>Английский</span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span>География</span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span></span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span></span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span></span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                </ul>
+            </section>
+            <section class="categories">
+                <h3>Категории от пользователей</h3>
+                <ul class="user-cards">
+                    <li>
+                        <label>
+                            <span>Физика</span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span>Информатика</span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span></span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span></span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span></span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span></span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span></span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span></span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span></span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+
+                        <button class="refresh-button"><img src="../content/refresh.svg" alt="refresh" width="40"
+                                style="transform: rotate(-120deg);"></button>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="deck">
+            <h2>Колода для изучения</h2>
+            <div class="deck-content">
+                <span>Нажатия на карточку перевернет ее</span>
+                <button class="card big-card">Лицевая сторона</button>
+                <ul class="score">
+                    <li>00</li>
+                    <br>
+                    <li>00</li>
+                    <br>
+                    <li>00</li>
+                    <br>
+                    <li>00</li>
+                    <br>
+                    <li>00</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="rating">
+            <h3>Оцените насколько вы знали содержимое карточки</h3>
+            <ul class="rating-buttons">
+                <li>
+                    <button class="rating-button worst">1</button>
+                </li>
+                <li>
+                    <button class="rating-button bad">2</button>
+                </li>
+                <li>
+                    <button class="rating-button normal">3</button>
+                </li>
+                <li>
+                    <button class="rating-button good">4</button>
+                </li>
+                <li>
+                    <button class="rating-button well">5</button>
+                </li>
+
+            </ul>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <ul class="footer-nav">
+            <li><a href="#">О НАС</a></li>
+            <li><a href="#">ПОДДЕРЖКА</a></li>
+            <li><a href="#">УСЛОВИЯ</a></li>
+            <li><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
+        </ul>
+        <p class="copyright">PROCARDS ©2022 Все права защищены</p>
+    </footer>
+
+</body>
+
+</html>
