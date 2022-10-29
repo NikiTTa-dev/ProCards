@@ -5,26 +5,27 @@ using ProCards.DAL.Models;
 
 namespace ProCards.Core.Data.Repositories;
 
-public class CardsRepository: ICardRepository
+public class CardRepository: ICardRepository
 {
     private AppDbContext _context;
     
-    public CardsRepository(AppDbContext context)
+    public CardRepository(AppDbContext context)
     {
         _context = context;
     }
 
-    public IEnumerable<Card> GetFiveCards(int firstCardId, string categoryName)
+    public IEnumerable<Card> GetFiveCards(string categoryName, bool isUserCategory)
     {
-        throw new NotImplementedException();
+        int rowsCount = _context.Cards.Count();
+        return _context.Cards
+            .Include(card => card.Category)
+            .Where(card => card.Category.Name == categoryName && card.Category.IsUserCategory == isUserCategory)
+            .OrderBy(r => EF.Functions.Random())
+            .Take(Math.Min(rowsCount, 5))
+            .ToList();
     }
 
     public Card GetCardById(int cardId)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Category GetCategoryById(int categoryId)
     {
         throw new NotImplementedException();
     }

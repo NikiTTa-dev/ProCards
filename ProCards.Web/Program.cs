@@ -1,9 +1,12 @@
 using System;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using ProCards.Core.Data.Repositories;
 using ProCards.DAL;
 using ProCards.DAL.Context;
 
@@ -27,6 +30,18 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+// app.Use(async (HttpContext context, Func<Task> next) =>
+// {
+//     using (var scope = app.Services.CreateScope())
+//     {
+//         AppDbContext dbContext = context.RequestServices.GetRequiredService<AppDbContext>();
+//         var rep = new CardRepository(dbContext);
+//         var a = rep.GetFiveCards("asdasd", true);
+//     }
+//
+//     await next.Invoke();
+// });
+
 app.MapControllers();
 
 using (var scope = app.Services.CreateScope())
@@ -36,7 +51,7 @@ using (var scope = app.Services.CreateScope())
     try
     {
         var context = services.GetRequiredService<AppDbContext>();
-        context.Database.EnsureDeleted();
+        //context.Database.EnsureDeleted();
         context.Database.EnsureCreated();
     }
     catch (Exception ex)

@@ -10,5 +10,5 @@ public class Grade: ModelBase
     [Required]
     public Card? Card { get; set; }
     
-    public DateTime PublishedAt { get; set; }
+    public DateTime? PublishedAt { get; set; }
 }

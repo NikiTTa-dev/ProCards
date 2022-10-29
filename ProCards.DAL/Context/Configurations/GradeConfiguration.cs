@@ -10,7 +10,7 @@ public class GradeConfiguration: IEntityTypeConfiguration<Grade>
     {
         builder.Property(p => p.GradeNumber)
             .IsRequired();
-        builder.Property(p => p.Card)
+        builder.Navigation(p => p.Card)
             .IsRequired();
     }
 }

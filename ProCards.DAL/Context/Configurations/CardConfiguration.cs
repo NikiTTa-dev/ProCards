@@ -14,7 +14,8 @@ public class CardConfiguration : IEntityTypeConfiguration<Card>
         builder.Property(p => p.SecondSide)
             .HasMaxLength(ConfigurationConstants.MaxCardSecondSideLength)
             .IsRequired();
-        builder.Property(p => p.Category)
+        builder.HasOne(p => p.Category)
+            .WithMany(c => c.Cards)
             .IsRequired();
     }
 }
