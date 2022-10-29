@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -28,19 +29,25 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 app.UseAuthorization();
 
-// app.Use(async (HttpContext context, Func<Task> next) =>
-// {
-//     using (var scope = app.Services.CreateScope())
-//     {
-//         AppDbContext dbContext = context.RequestServices.GetRequiredService<AppDbContext>();
-//         var rep = new CardRepository(dbContext);
-//         var a = rep.GetFiveCards("asdasd", true);
-//     }
-//
-//     await next.Invoke();
-// });
+app.Use(async (HttpContext context, Func<Task> next) =>
+{
+    using (var scope = app.Services.CreateScope())
+    {
+        AppDbContext dbContext = context.RequestServices.GetRequiredService<AppDbContext>();
+        var rep = new CategoryRepository(dbContext);
+        // var a = rep.GetNineCategories(1);
+        // var b = rep.GetNineCategories(10);
+        // var c = rep.GetNineCategories(15);
+        // var rep = new CardRepository(dbContext);
+        // var a = rep.GetFiveCards("asdasd", true);
+        await next.Invoke();
+    }
+});
 
 app.MapControllers();
 

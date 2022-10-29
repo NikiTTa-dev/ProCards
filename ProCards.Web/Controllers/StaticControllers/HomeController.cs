@@ -3,9 +3,10 @@
 namespace ProCards.Web.Controllers.StaticControllers;
 
 [ApiController]
+[Route("/{controller}/{action}")]
 public class HomeController: ControllerBase
 {
-    [HttpGet("/")]
+    [HttpGet]
     public IActionResult Index()
     {
         var html = System.IO.File.ReadAllText(@"./Views/index.html");

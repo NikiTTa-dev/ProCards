@@ -149,3 +149,183 @@ info: 29.10.2022 03:21:19.594 RelationalEventId.CommandExecuted[20101] (Microsof
       WHERE (`c0`.`Name` = @__categoryName_0) AND (`c0`.`IsUserCategory` = @__isUserCategory_1)
       ORDER BY RAND()
       LIMIT @__p_3
+warn: 29.10.2022 22:57:56.439 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 29.10.2022 22:57:56.617 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 29.10.2022 22:57:57.107 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 29.10.2022 22:58:24.113 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 29.10.2022 22:58:24.294 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 29.10.2022 22:58:24.744 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 29.10.2022 23:36:07.799 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 29.10.2022 23:36:07.940 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 29.10.2022 23:36:08.341 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 29.10.2022 23:36:46.631 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 29.10.2022 23:36:46.789 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 29.10.2022 23:36:47.203 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 29.10.2022 23:37:15.603 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 29.10.2022 23:37:15.756 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 29.10.2022 23:37:16.138 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 29.10.2022 23:58:45.625 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 29.10.2022 23:58:45.771 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 29.10.2022 23:58:46.120 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 30.10.2022 00:00:14.969 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 30.10.2022 00:00:15.101 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 30.10.2022 00:00:15.454 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 30.10.2022 00:00:41.220 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 30.10.2022 00:00:41.365 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 30.10.2022 00:00:41.716 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 30.10.2022 00:01:24.904 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 30.10.2022 00:01:25.053 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 30.10.2022 00:01:25.419 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 30.10.2022 00:01:49.659 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 30.10.2022 00:01:49.802 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 30.10.2022 00:01:50.166 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 30.10.2022 00:07:35.068 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 30.10.2022 00:07:35.224 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 30.10.2022 00:07:35.613 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 30.10.2022 00:08:38.433 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 30.10.2022 00:08:38.592 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 30.10.2022 00:08:38.981 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 30.10.2022 00:09:18.458 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 30.10.2022 00:09:18.602 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 30.10.2022 00:09:18.988 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 30.10.2022 00:12:45.952 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 30.10.2022 00:12:46.109 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 30.10.2022 00:12:46.495 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 30.10.2022 00:16:19.613 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 30.10.2022 00:16:19.756 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 30.10.2022 00:16:20.122 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 30.10.2022 00:24:48.881 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 30.10.2022 00:24:49.013 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 30.10.2022 00:24:49.367 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 30.10.2022 00:28:11.234 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 30.10.2022 00:28:11.379 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 30.10.2022 00:28:11.736 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 30.10.2022 00:31:06.932 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 30.10.2022 00:31:07.060 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 30.10.2022 00:31:07.421 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 30.10.2022 00:33:59.359 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 30.10.2022 00:33:59.490 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 30.10.2022 00:33:59.863 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
+warn: 30.10.2022 00:38:24.110 CoreEventId.AmbiguousEndRequiredWarning[10624] (Microsoft.EntityFrameworkCore.Model) 
+      The foreign key {'CardId'} on entity type 'Grade' cannot be configured as required since the dependent side cannot be determined. To identify the dependent side of the relationship, configure the foreign key property or the principal key before configuring the foreign key as required in 'OnModelCreating'. See http://go.microsoft.com/fwlink/?LinkId=724062 for more details.
+info: 30.10.2022 00:38:24.258 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 6.0.10 initialized 'AppDbContext' using provider 'MySql.EntityFrameworkCore:6.0.7+MySQL8.0.31' with options: None
+info: 30.10.2022 00:38:24.608 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'name'
