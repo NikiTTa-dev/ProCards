@@ -13,8 +13,7 @@ public class CategoryConfiguration: IEntityTypeConfiguration<Category>
             .IsRequired();
         builder.Property(p => p.IsUserCategory)
             .IsRequired();
-        builder.HasMany(p=> p.Cards)
-            .WithOne(c => c.Category)
-            .IsRequired();
+        builder.HasMany(p => p.Cards)
+            .WithOne(c => c.Category);
     }
 }

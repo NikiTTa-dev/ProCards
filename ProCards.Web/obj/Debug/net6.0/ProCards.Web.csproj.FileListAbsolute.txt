@@ -54,3 +54,15 @@ C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\obj\Debug\
 C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\obj\Debug\net6.0\ref\ProCards.Web.dll
 C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\ProCards.DAL.dll
 C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\ProCards.DAL.pdb
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\Serilog.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\Serilog.AspNetCore.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\Properties\launchSettings.json
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\wwwroot\js\create.js

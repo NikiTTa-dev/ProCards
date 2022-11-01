@@ -175,3 +175,8 @@ label:active {
 .well {
     background: linear-gradient(47.45deg, #00C6BD 20.48%, #07DF91 79.09%);
 }
+
+.hidden,
+textarea[type=hidden] {
+    display: none;
+}

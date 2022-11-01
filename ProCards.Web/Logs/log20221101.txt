@@ -1,0 +1,809 @@
+2022-11-01 21:42:07.849 +05:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-01 21:42:08.096 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-01 21:42:08.097 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-01 21:42:08.100 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 21:42:08.101 +05:00 [INF] Hosting environment: Development
+2022-11-01 21:42:08.102 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-01 21:42:18.481 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/ - -
+2022-11-01 21:42:18.545 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.IndexController.Index (ProCards.Web)'
+2022-11-01 21:42:18.571 +05:00 [INF] Route matched with {action = "Index", controller = "Index"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ProCards.Web.Controllers.StaticControllers.IndexController (ProCards.Web).
+2022-11-01 21:42:18.585 +05:00 [INF] Executing VirtualFileResult, sending file '~/index.html' with download name '' ...
+2022-11-01 21:42:18.598 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.IndexController.Index (ProCards.Web) in 20.5444ms
+2022-11-01 21:42:18.604 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.IndexController.Index (ProCards.Web)'
+2022-11-01 21:42:18.652 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/ - - - 304 - - 171.5152ms
+2022-11-01 21:42:18.697 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/css/mainStyle.css - -
+2022-11-01 21:42:18.701 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/content/pattern.png - -
+2022-11-01 21:42:18.701 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/content/arrow.svg - -
+2022-11-01 21:42:18.712 +05:00 [INF] The file /content/pattern.png was not modified
+2022-11-01 21:42:18.712 +05:00 [INF] The file /content/arrow.svg was not modified
+2022-11-01 21:42:18.712 +05:00 [INF] The file /css/mainStyle.css was not modified
+2022-11-01 21:42:18.715 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/content/arrow.svg - - - 304 - image/svg+xml 14.7990ms
+2022-11-01 21:42:18.715 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/content/pattern.png - - - 304 - image/png 14.8367ms
+2022-11-01 21:42:18.724 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/css/mainStyle.css - - - 304 - text/css 26.8486ms
+2022-11-01 21:42:24.155 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/swagger - -
+2022-11-01 21:42:24.160 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/swagger - - - 301 0 - 5.1257ms
+2022-11-01 21:42:24.164 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - -
+2022-11-01 21:42:24.203 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - - - 200 - text/html;charset=utf-8 38.5667ms
+2022-11-01 21:42:24.352 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - -
+2022-11-01 21:42:24.431 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 79.4822ms
+2022-11-01 21:42:54.682 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 101
+2022-11-01 21:42:54.688 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 21:42:54.701 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDTO, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 21:42:55.314 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 21:42:55.316 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 612.796ms
+2022-11-01 21:42:55.317 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 21:42:55.325 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 101 - 204 - - 643.1133ms
+2022-11-01 21:44:19.513 +05:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-01 21:44:19.658 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-01 21:44:19.660 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-01 21:44:19.662 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 21:44:19.662 +05:00 [INF] Hosting environment: Development
+2022-11-01 21:44:19.664 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-01 21:44:21.247 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - -
+2022-11-01 21:44:21.337 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - - - 200 - text/html;charset=utf-8 90.5726ms
+2022-11-01 21:44:21.490 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - -
+2022-11-01 21:44:21.554 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 63.3627ms
+2022-11-01 21:44:39.885 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D1%8B%D1%84%D0%B0%D1%8B%D1%84&isuser=true - -
+2022-11-01 21:44:39.892 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 21:44:39.911 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 21:44:40.256 +05:00 [INF] Executing OkObjectResult, writing value of type 'ProCards.Core.Data.DTOs.CardDTO'.
+2022-11-01 21:44:40.270 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 349.9942ms
+2022-11-01 21:44:40.273 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 21:44:40.278 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D1%8B%D1%84%D0%B0%D1%8B%D1%84&isuser=true - - - 200 - application/json;+charset=utf-8 392.2633ms
+2022-11-01 21:45:23.698 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D1%8B%D1%84%D0%B0%D1%8B%D1%84&isuser=true - -
+2022-11-01 21:45:23.709 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 21:45:23.711 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 21:45:23.741 +05:00 [INF] Executing OkObjectResult, writing value of type 'ProCards.Core.Data.DTOs.CardDTO'.
+2022-11-01 21:45:23.744 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 30.6308ms
+2022-11-01 21:45:23.751 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 21:45:23.754 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D1%8B%D1%84%D0%B0%D1%8B%D1%84&isuser=true - - - 200 - application/json;+charset=utf-8 56.9630ms
+2022-11-01 21:49:28.423 +05:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-01 21:49:28.579 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-01 21:49:28.581 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-01 21:49:28.582 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 21:49:28.584 +05:00 [INF] Hosting environment: Development
+2022-11-01 21:49:28.586 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-01 21:49:31.753 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D1%8B%D1%84%D0%B0%D1%8B%D1%84&isuser=true - -
+2022-11-01 21:49:31.791 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 21:49:31.807 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 21:49:32.123 +05:00 [INF] Executing OkObjectResult, writing value of type 'ProCards.Core.Data.DTOs.CardDTO'.
+2022-11-01 21:49:32.149 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 335.2755ms
+2022-11-01 21:49:32.152 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 21:49:32.159 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D1%8B%D1%84%D0%B0%D1%8B%D1%84&isuser=true - - - 200 - application/json;+charset=utf-8 406.4176ms
+2022-11-01 21:49:38.798 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - -
+2022-11-01 21:49:38.827 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - - - 200 - text/html;charset=utf-8 28.7652ms
+2022-11-01 21:49:39.007 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - -
+2022-11-01 21:49:39.075 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 68.0532ms
+2022-11-01 22:13:18.328 +05:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-01 22:13:18.484 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-01 22:13:18.486 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-01 22:13:18.488 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 22:13:18.489 +05:00 [INF] Hosting environment: Development
+2022-11-01 22:13:18.491 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-01 22:13:18.592 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - -
+2022-11-01 22:13:18.680 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - - - 200 - text/html;charset=utf-8 89.3516ms
+2022-11-01 22:13:18.911 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - -
+2022-11-01 22:13:18.982 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 70.6499ms
+2022-11-01 22:13:26.857 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 99
+2022-11-01 22:13:26.862 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:13:26.878 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDTO, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:13:27.309 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 22:13:27.316 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 432.4176ms
+2022-11-01 22:13:27.319 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:13:27.324 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 99 - 204 - - 467.5238ms
+2022-11-01 22:13:45.560 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 97
+2022-11-01 22:13:45.562 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:13:45.565 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDTO, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:13:45.607 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 22:13:45.608 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 40.9576ms
+2022-11-01 22:13:45.610 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:13:45.614 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 97 - 204 - - 52.2964ms
+2022-11-01 22:20:40.377 +05:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-01 22:20:40.538 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-01 22:20:40.540 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-01 22:20:40.542 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 22:20:40.543 +05:00 [INF] Hosting environment: Development
+2022-11-01 22:20:40.544 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-01 22:20:40.653 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - -
+2022-11-01 22:20:40.734 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - - - 200 - text/html;charset=utf-8 82.5644ms
+2022-11-01 22:20:40.851 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - -
+2022-11-01 22:20:40.925 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.7793ms
+2022-11-01 22:20:55.479 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 91
+2022-11-01 22:20:55.484 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:20:55.500 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:20:55.761 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 22:20:55.768 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 263.6413ms
+2022-11-01 22:20:55.770 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:20:55.775 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 91 - 204 - - 296.2725ms
+2022-11-01 22:25:03.809 +05:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-01 22:25:03.964 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-01 22:25:03.966 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-01 22:25:03.968 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 22:25:03.969 +05:00 [INF] Hosting environment: Development
+2022-11-01 22:25:03.970 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-01 22:25:08.980 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 94
+2022-11-01 22:25:09.018 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:25:09.035 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:25:09.317 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 22:25:09.324 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 282.5203ms
+2022-11-01 22:25:09.328 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:25:09.349 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 94 - 204 - - 369.9236ms
+2022-11-01 22:29:52.353 +05:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-01 22:29:52.507 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-01 22:29:52.509 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-01 22:29:52.511 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 22:29:52.512 +05:00 [INF] Hosting environment: Development
+2022-11-01 22:29:52.513 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-01 22:30:11.640 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/leqarn - -
+2022-11-01 22:30:11.697 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/leqarn - - - 404 0 - 58.5716ms
+2022-11-01 22:30:14.763 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 22:30:14.767 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 22:30:14.779 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 22:30:14.787 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 22:30:14.804 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 19.156ms
+2022-11-01 22:30:14.809 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 22:30:14.812 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 200 7811 text/html 48.7581ms
+2022-11-01 22:30:14.842 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 22:30:14.842 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/css/learnStyle.css - -
+2022-11-01 22:30:14.877 +05:00 [INF] Sending file. Request path: '/js/learn.js'. Physical path: 'C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\wwwroot\js\learn.js'
+2022-11-01 22:30:14.877 +05:00 [INF] Sending file. Request path: '/css/learnStyle.css'. Physical path: 'C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\wwwroot\css\learnStyle.css'
+2022-11-01 22:30:14.881 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 200 972 application/javascript 39.1398ms
+2022-11-01 22:30:14.881 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/css/learnStyle.css - - - 200 3415 text/css 38.5919ms
+2022-11-01 22:30:34.764 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 22:30:34.766 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 22:30:34.768 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 22:30:34.770 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 22:30:34.774 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 3.9949ms
+2022-11-01 22:30:34.776 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 22:30:34.777 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 13.4799ms
+2022-11-01 22:30:34.815 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/css/learnStyle.css - -
+2022-11-01 22:30:34.816 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 22:30:34.819 +05:00 [INF] The file /css/learnStyle.css was not modified
+2022-11-01 22:30:34.820 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 22:30:34.822 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/css/learnStyle.css - - - 304 - text/css 6.1786ms
+2022-11-01 22:30:34.823 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 7.2505ms
+2022-11-01 22:30:54.662 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - -
+2022-11-01 22:30:54.700 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - - - 200 - text/html;charset=utf-8 39.2513ms
+2022-11-01 22:30:54.882 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - -
+2022-11-01 22:30:54.959 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 76.6968ms
+2022-11-01 22:35:40.672 +05:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-01 22:35:40.832 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-01 22:35:40.836 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-01 22:35:40.838 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 22:35:40.839 +05:00 [INF] Hosting environment: Development
+2022-11-01 22:35:40.841 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-01 22:36:21.045 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 98
+2022-11-01 22:36:21.082 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:36:21.099 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:36:21.396 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 22:36:21.404 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 296.7849ms
+2022-11-01 22:36:21.409 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:36:21.432 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 98 - 204 - - 388.8290ms
+2022-11-01 22:36:27.801 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 97
+2022-11-01 22:36:27.804 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:36:27.806 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:36:27.842 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 22:36:27.844 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 34.5586ms
+2022-11-01 22:36:27.846 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:36:27.848 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 97 - 204 - - 47.0296ms
+2022-11-01 22:40:11.325 +05:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-01 22:40:11.477 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-01 22:40:11.478 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-01 22:40:11.480 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 22:40:11.481 +05:00 [INF] Hosting environment: Development
+2022-11-01 22:40:11.482 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-01 22:40:24.326 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 97
+2022-11-01 22:40:24.369 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:40:24.385 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:40:24.825 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 22:40:24.831 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 440.177ms
+2022-11-01 22:40:24.833 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:40:24.851 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 97 - 204 - - 525.8291ms
+2022-11-01 22:40:31.225 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 97
+2022-11-01 22:40:31.227 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:40:31.231 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:40:31.271 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 22:40:31.273 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 38.1058ms
+2022-11-01 22:40:31.274 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:40:31.276 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 97 - 204 - - 51.8234ms
+2022-11-01 22:41:03.092 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 101
+2022-11-01 22:41:03.094 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:41:03.095 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:41:03.118 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 22:41:03.120 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 22.4773ms
+2022-11-01 22:41:03.122 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:41:03.124 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 101 - 204 - - 32.1849ms
+2022-11-01 22:41:11.087 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 101
+2022-11-01 22:41:11.092 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:41:11.094 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:41:11.114 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 22:41:11.115 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 19.1702ms
+2022-11-01 22:41:11.119 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:41:11.121 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 101 - 204 - - 34.8147ms
+2022-11-01 22:41:27.990 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 116
+2022-11-01 22:41:27.991 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:41:27.993 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:41:28.015 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 22:41:28.016 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 19.0358ms
+2022-11-01 22:41:28.018 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 22:41:28.020 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 116 - 204 - - 30.2532ms
+2022-11-01 22:41:31.565 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 22:41:31.571 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 22:41:31.573 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 22:41:31.580 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 22:41:31.587 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 10.8682ms
+2022-11-01 22:41:31.589 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 22:41:31.590 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 25.6766ms
+2022-11-01 22:41:31.611 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/css/learnStyle.css - -
+2022-11-01 22:41:31.611 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 22:41:31.619 +05:00 [INF] The file /css/learnStyle.css was not modified
+2022-11-01 22:41:31.619 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 22:41:31.622 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/css/learnStyle.css - - - 304 - text/css 11.0607ms
+2022-11-01 22:41:31.624 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 13.3147ms
+2022-11-01 22:41:33.820 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 22:41:33.821 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:41:33.823 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:41:33.863 +05:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2022-11-01 22:41:33.885 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 22:41:33.892 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 67.0086ms
+2022-11-01 22:41:33.895 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:41:33.897 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 77.0750ms
+2022-11-01 22:42:10.814 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isUser=true - -
+2022-11-01 22:42:10.829 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:42:10.832 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:42:10.838 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 22:42:10.840 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 4.9714ms
+2022-11-01 22:42:10.843 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:42:10.847 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isUser=true - - - 200 - application/json;+charset=utf-8 33.2779ms
+2022-11-01 22:52:54.454 +05:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-01 22:52:54.614 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-01 22:52:54.616 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-01 22:52:54.618 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 22:52:54.619 +05:00 [INF] Hosting environment: Development
+2022-11-01 22:52:54.620 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-01 22:52:55.678 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isUser=true - -
+2022-11-01 22:52:55.726 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:52:55.742 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:52:56.216 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 22:52:56.242 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 493.4223ms
+2022-11-01 22:52:56.245 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:52:56.252 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isUser=true - - - 200 - application/json;+charset=utf-8 575.0230ms
+2022-11-01 22:53:07.231 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isUser=true - -
+2022-11-01 22:53:07.233 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:53:07.235 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:53:07.262 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 22:53:07.265 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 26.5334ms
+2022-11-01 22:53:07.268 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:53:07.271 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isUser=true - - - 200 - application/json;+charset=utf-8 39.8214ms
+2022-11-01 22:53:08.334 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isUser=true - -
+2022-11-01 22:53:08.336 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:53:08.338 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:53:08.349 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 22:53:08.351 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 9.7083ms
+2022-11-01 22:53:08.354 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:53:08.356 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isUser=true - - - 200 - application/json;+charset=utf-8 22.1448ms
+2022-11-01 22:53:09.315 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isUser=true - -
+2022-11-01 22:53:09.317 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:53:09.318 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:53:09.328 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 22:53:09.330 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 8.4353ms
+2022-11-01 22:53:09.332 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:53:09.335 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isUser=true - - - 200 - application/json;+charset=utf-8 19.5787ms
+2022-11-01 22:53:10.458 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isUser=true - -
+2022-11-01 22:53:10.459 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:53:10.461 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:53:10.471 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 22:53:10.473 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 8.0676ms
+2022-11-01 22:53:10.475 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:53:10.476 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isUser=true - - - 200 - application/json;+charset=utf-8 18.5052ms
+2022-11-01 22:54:10.285 +05:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-01 22:54:10.455 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-01 22:54:10.457 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-01 22:54:10.459 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 22:54:10.460 +05:00 [INF] Hosting environment: Development
+2022-11-01 22:54:10.463 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-01 22:54:11.680 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 22:54:11.718 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 22:54:11.727 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 22:54:11.737 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 22:54:11.754 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 14.4134ms
+2022-11-01 22:54:11.758 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 22:54:11.777 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 99.7989ms
+2022-11-01 22:54:11.810 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/css/learnStyle.css - -
+2022-11-01 22:54:11.818 +05:00 [INF] The file /css/learnStyle.css was not modified
+2022-11-01 22:54:11.821 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/css/learnStyle.css - - - 304 - text/css 10.3689ms
+2022-11-01 22:54:11.837 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 22:54:11.839 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 22:54:11.841 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 3.6444ms
+2022-11-01 22:54:42.063 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 22:54:42.067 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:54:42.076 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:54:42.454 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 22:54:42.462 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 384.2444ms
+2022-11-01 22:54:42.465 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:54:42.470 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 407.6978ms
+2022-11-01 22:55:48.661 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 22:55:48.674 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 22:55:48.675 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 22:55:48.678 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 22:55:48.680 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 2.0743ms
+2022-11-01 22:55:48.682 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 22:55:48.686 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 24.6011ms
+2022-11-01 22:55:50.499 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 22:55:50.501 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:55:50.502 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:55:50.526 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 22:55:50.529 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 23.8866ms
+2022-11-01 22:55:50.531 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:55:50.533 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 33.8732ms
+2022-11-01 22:56:01.713 +05:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-01 22:56:01.858 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-01 22:56:01.860 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-01 22:56:01.862 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 22:56:01.863 +05:00 [INF] Hosting environment: Development
+2022-11-01 22:56:01.864 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-01 22:56:11.196 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 22:56:11.246 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 22:56:11.258 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 22:56:11.267 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 22:56:11.276 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 11.1485ms
+2022-11-01 22:56:11.280 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 22:56:11.297 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 103.4651ms
+2022-11-01 22:56:13.965 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 22:56:13.967 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:56:13.976 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:56:14.328 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 22:56:14.337 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 357.5323ms
+2022-11-01 22:56:14.340 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:56:14.345 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 379.3095ms
+2022-11-01 22:56:37.795 +05:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-01 22:56:37.956 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-01 22:56:37.958 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-01 22:56:37.960 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 22:56:37.961 +05:00 [INF] Hosting environment: Development
+2022-11-01 22:56:37.963 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-01 22:56:39.130 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 22:56:39.175 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 22:56:39.186 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 22:56:39.196 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 22:56:39.206 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 10.6187ms
+2022-11-01 22:56:39.211 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 22:56:39.228 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 99.2136ms
+2022-11-01 22:56:39.255 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/css/learnStyle.css - -
+2022-11-01 22:56:39.265 +05:00 [INF] The file /css/learnStyle.css was not modified
+2022-11-01 22:56:39.269 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/css/learnStyle.css - - - 304 - text/css 13.6215ms
+2022-11-01 22:56:57.537 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 22:56:57.559 +05:00 [INF] Sending file. Request path: '/js/learn.js'. Physical path: 'C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\wwwroot\js\learn.js'
+2022-11-01 22:56:57.562 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 200 975 application/javascript 25.8376ms
+2022-11-01 22:57:05.606 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 22:57:05.608 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 22:57:05.610 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 22:57:05.614 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 22:57:05.616 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 2.3014ms
+2022-11-01 22:57:05.618 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 22:57:05.620 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 13.6291ms
+2022-11-01 22:57:05.638 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 22:57:05.642 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 22:57:05.644 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 5.8258ms
+2022-11-01 22:57:10.902 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 22:57:10.903 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:57:10.915 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 22:57:11.314 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 22:57:11.322 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 405.1306ms
+2022-11-01 22:57:11.325 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 22:57:11.331 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 428.7895ms
+2022-11-01 23:03:57.046 +05:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-01 23:03:57.209 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-01 23:03:57.211 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-01 23:03:57.213 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 23:03:57.214 +05:00 [INF] Hosting environment: Development
+2022-11-01 23:03:57.215 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-01 23:03:58.109 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:03:58.151 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:03:58.162 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:03:58.169 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:03:58.177 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 10.2205ms
+2022-11-01 23:03:58.182 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:03:58.200 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 91.6540ms
+2022-11-01 23:03:58.222 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:03:58.222 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/css/learnStyle.css - -
+2022-11-01 23:03:58.232 +05:00 [INF] The file /css/learnStyle.css was not modified
+2022-11-01 23:03:58.236 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/css/learnStyle.css - - - 304 - text/css 14.0800ms
+2022-11-01 23:03:58.247 +05:00 [INF] Sending file. Request path: '/js/learn.js'. Physical path: 'C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\wwwroot\js\learn.js'
+2022-11-01 23:03:58.249 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 200 1143 application/javascript 26.9856ms
+2022-11-01 23:04:05.719 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:04:05.721 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:04:05.732 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:04:06.115 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:04:06.123 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 388.6373ms
+2022-11-01 23:04:06.125 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:04:06.130 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 410.5858ms
+2022-11-01 23:05:22.485 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:05:22.493 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:05:22.500 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:05:22.503 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:05:22.504 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 2.0508ms
+2022-11-01 23:05:22.507 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:05:22.509 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 24.7224ms
+2022-11-01 23:05:22.538 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:05:22.541 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 23:05:22.544 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 5.5152ms
+2022-11-01 23:05:25.123 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:05:25.125 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:05:25.127 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:05:25.160 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:05:25.162 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 32.9244ms
+2022-11-01 23:05:25.165 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:05:25.167 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 44.0379ms
+2022-11-01 23:06:06.100 +05:00 [INF] User profile is available. Using 'C:\Users\nikit\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-01 23:06:06.256 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-01 23:06:06.257 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-01 23:06:06.259 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-01 23:06:06.260 +05:00 [INF] Hosting environment: Development
+2022-11-01 23:06:06.261 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-01 23:06:07.041 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:06:07.079 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:06:07.089 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:06:07.097 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:06:07.106 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 10.4349ms
+2022-11-01 23:06:07.112 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:06:07.131 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 91.2823ms
+2022-11-01 23:06:07.150 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:06:07.168 +05:00 [INF] Sending file. Request path: '/js/learn.js'. Physical path: 'C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\wwwroot\js\learn.js'
+2022-11-01 23:06:07.172 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 200 1169 application/javascript 22.3707ms
+2022-11-01 23:06:09.652 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:06:09.654 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:06:09.665 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:06:10.028 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:06:10.036 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 368.0943ms
+2022-11-01 23:06:10.038 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:06:10.042 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 390.6889ms
+2022-11-01 23:06:42.774 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:06:42.777 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:06:42.782 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:06:42.785 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:06:42.787 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 2.2652ms
+2022-11-01 23:06:42.789 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:06:42.793 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 19.0386ms
+2022-11-01 23:06:42.812 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:06:42.814 +05:00 [INF] Sending file. Request path: '/js/learn.js'. Physical path: 'C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\wwwroot\js\learn.js'
+2022-11-01 23:06:42.816 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 200 1187 application/javascript 4.2259ms
+2022-11-01 23:06:47.432 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:06:47.433 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:06:47.434 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:06:47.458 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:06:47.460 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 23.7017ms
+2022-11-01 23:06:47.462 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:06:47.464 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 32.3756ms
+2022-11-01 23:08:17.435 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:08:17.448 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:17.451 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:08:17.454 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:08:17.455 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 2.0391ms
+2022-11-01 23:08:17.457 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:17.459 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 23.8972ms
+2022-11-01 23:08:17.482 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/css/learnStyle.css - -
+2022-11-01 23:08:17.484 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:08:17.486 +05:00 [INF] The file /css/learnStyle.css was not modified
+2022-11-01 23:08:17.489 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/css/learnStyle.css - - - 304 - text/css 7.2433ms
+2022-11-01 23:08:17.498 +05:00 [INF] Sending file. Request path: '/js/learn.js'. Physical path: 'C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\wwwroot\js\learn.js'
+2022-11-01 23:08:17.505 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 200 1203 application/javascript 20.9731ms
+2022-11-01 23:08:22.236 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:08:22.238 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:22.239 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:08:22.241 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:08:22.243 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 2.0866ms
+2022-11-01 23:08:22.245 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:22.246 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 10.0952ms
+2022-11-01 23:08:22.262 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:08:22.263 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 23:08:22.265 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 3.2957ms
+2022-11-01 23:08:24.903 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:08:24.905 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:08:24.906 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:08:24.915 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:08:24.917 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 9.4759ms
+2022-11-01 23:08:24.920 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:08:24.922 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 19.0314ms
+2022-11-01 23:08:31.621 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:08:31.623 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:31.624 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:08:31.626 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:08:31.628 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 1.8985ms
+2022-11-01 23:08:31.629 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:31.631 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 9.4624ms
+2022-11-01 23:08:31.653 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:08:31.655 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 23:08:31.657 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 3.7237ms
+2022-11-01 23:08:33.257 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:08:33.258 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:08:33.261 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:08:33.268 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:08:33.270 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 7.1519ms
+2022-11-01 23:08:33.273 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:08:33.274 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 17.7882ms
+2022-11-01 23:08:35.588 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:08:35.590 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:35.592 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:08:35.596 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:08:35.599 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 2.8725ms
+2022-11-01 23:08:35.600 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:35.601 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 13.1764ms
+2022-11-01 23:08:35.619 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:08:35.621 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 23:08:35.624 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 5.1518ms
+2022-11-01 23:08:36.649 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:08:36.651 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:08:36.653 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:08:36.660 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:08:36.663 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 7.0758ms
+2022-11-01 23:08:36.665 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:08:36.667 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 18.2086ms
+2022-11-01 23:08:40.055 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:08:40.056 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:40.057 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:08:40.060 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:08:40.062 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 2.2411ms
+2022-11-01 23:08:40.064 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:40.066 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 10.5175ms
+2022-11-01 23:08:40.079 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:08:40.081 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 23:08:40.084 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 4.9482ms
+2022-11-01 23:08:41.864 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:08:41.865 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:08:41.867 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:08:41.878 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:08:41.879 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 10.327ms
+2022-11-01 23:08:41.882 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:08:41.884 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 20.7435ms
+2022-11-01 23:08:45.129 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:08:45.131 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:45.132 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:08:45.135 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:08:45.138 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 2.702ms
+2022-11-01 23:08:45.139 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:45.141 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 12.3061ms
+2022-11-01 23:08:45.156 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:08:45.157 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 23:08:45.158 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 2.6550ms
+2022-11-01 23:08:48.382 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:08:48.384 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:08:48.385 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:08:48.393 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:08:48.395 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 7.4176ms
+2022-11-01 23:08:48.398 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:08:48.400 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 17.8234ms
+2022-11-01 23:08:50.268 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:08:50.269 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:50.271 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:08:50.274 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:08:50.276 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 1.764ms
+2022-11-01 23:08:50.278 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:50.280 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 12.5338ms
+2022-11-01 23:08:50.296 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:08:50.298 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 23:08:50.301 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 4.9350ms
+2022-11-01 23:08:52.075 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:08:52.076 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:08:52.077 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:08:52.086 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:08:52.088 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 7.9762ms
+2022-11-01 23:08:52.090 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:08:52.092 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 17.3736ms
+2022-11-01 23:08:53.668 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:08:53.669 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:53.670 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:08:53.673 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:08:53.676 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 3.2559ms
+2022-11-01 23:08:53.678 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:53.680 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 12.7246ms
+2022-11-01 23:08:53.698 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:08:53.700 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 23:08:53.702 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 4.1883ms
+2022-11-01 23:08:54.540 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:08:54.542 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:08:54.544 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:08:54.554 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:08:54.556 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 8.3601ms
+2022-11-01 23:08:54.557 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:08:54.560 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 19.6790ms
+2022-11-01 23:08:56.349 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:08:56.351 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:56.352 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:08:56.355 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:08:56.357 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 2.6394ms
+2022-11-01 23:08:56.358 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:56.360 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 10.9432ms
+2022-11-01 23:08:57.626 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:08:57.627 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:08:57.629 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:08:57.635 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:08:57.640 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 8.5038ms
+2022-11-01 23:08:57.641 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:08:57.643 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 17.3639ms
+2022-11-01 23:08:59.536 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:08:59.537 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:59.538 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:08:59.540 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:08:59.542 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 2.0465ms
+2022-11-01 23:08:59.545 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:08:59.548 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 12.3590ms
+2022-11-01 23:08:59.565 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:08:59.567 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 23:08:59.568 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 3.8002ms
+2022-11-01 23:09:00.430 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:09:00.432 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:09:00.433 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:09:00.441 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:09:00.443 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 7.454ms
+2022-11-01 23:09:00.446 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:09:00.447 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 17.1453ms
+2022-11-01 23:09:03.024 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:09:03.025 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:09:03.026 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:09:03.029 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:09:03.031 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 2.2829ms
+2022-11-01 23:09:03.033 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:09:03.035 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 11.6679ms
+2022-11-01 23:09:04.619 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:09:04.620 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:09:04.621 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:09:04.630 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:09:04.632 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 7.9533ms
+2022-11-01 23:09:04.634 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:09:04.636 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 17.5479ms
+2022-11-01 23:09:06.621 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:09:06.623 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:09:06.624 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:09:06.627 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:09:06.630 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 2.5943ms
+2022-11-01 23:09:06.631 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:09:06.633 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 12.8084ms
+2022-11-01 23:09:06.648 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:09:06.650 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 23:09:06.652 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 3.9062ms
+2022-11-01 23:09:07.468 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:09:07.469 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:09:07.470 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:09:07.479 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:09:07.481 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 8.0196ms
+2022-11-01 23:09:07.483 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:09:07.485 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 17.4952ms
+2022-11-01 23:09:44.673 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:09:44.680 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:09:44.705 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:09:44.708 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:09:44.710 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 2.5822ms
+2022-11-01 23:09:44.713 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:09:44.714 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 43.8591ms
+2022-11-01 23:09:44.733 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:09:44.738 +05:00 [INF] Sending file. Request path: '/js/learn.js'. Physical path: 'C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\wwwroot\js\learn.js'
+2022-11-01 23:09:44.741 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 200 1201 application/javascript 7.9024ms
+2022-11-01 23:09:47.058 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:09:47.060 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:09:47.062 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:09:47.070 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:09:47.072 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 8.2572ms
+2022-11-01 23:09:47.073 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:09:47.075 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 16.4369ms
+2022-11-01 23:10:28.276 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 116
+2022-11-01 23:10:28.281 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:28.284 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:10:28.442 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 23:10:28.445 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 156.6717ms
+2022-11-01 23:10:28.447 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:28.450 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 116 - 204 - - 174.0408ms
+2022-11-01 23:10:28.516 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 116
+2022-11-01 23:10:28.517 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:28.519 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:10:28.531 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 23:10:28.532 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 10.7591ms
+2022-11-01 23:10:28.534 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:28.536 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 116 - 204 - - 20.3108ms
+2022-11-01 23:10:28.661 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 116
+2022-11-01 23:10:28.663 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:28.666 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:10:28.674 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 23:10:28.675 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 7.3544ms
+2022-11-01 23:10:28.678 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:28.682 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 116 - 204 - - 20.7551ms
+2022-11-01 23:10:28.872 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 116
+2022-11-01 23:10:28.873 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:28.875 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:10:28.893 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 23:10:28.896 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 18.5313ms
+2022-11-01 23:10:28.898 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:28.900 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 116 - 204 - - 28.5003ms
+2022-11-01 23:10:29.024 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 116
+2022-11-01 23:10:29.025 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:29.027 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:10:29.038 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 23:10:29.039 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 9.772ms
+2022-11-01 23:10:29.041 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:29.043 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 116 - 204 - - 19.4927ms
+2022-11-01 23:10:29.165 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 116
+2022-11-01 23:10:29.167 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:29.168 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:10:29.177 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 23:10:29.179 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 8.7349ms
+2022-11-01 23:10:29.180 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:29.183 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 116 - 204 - - 17.3373ms
+2022-11-01 23:10:29.303 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 116
+2022-11-01 23:10:29.305 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:29.307 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:10:29.318 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 23:10:29.322 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 12.4134ms
+2022-11-01 23:10:29.323 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:29.325 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 116 - 204 - - 21.9618ms
+2022-11-01 23:10:29.432 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 116
+2022-11-01 23:10:29.434 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:29.436 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:10:29.447 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 23:10:29.449 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 10.2811ms
+2022-11-01 23:10:29.451 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:29.453 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 116 - 204 - - 20.6533ms
+2022-11-01 23:10:29.582 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 116
+2022-11-01 23:10:29.584 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:29.586 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:10:29.598 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 23:10:29.599 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 9.8311ms
+2022-11-01 23:10:29.601 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:29.603 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 116 - 204 - - 21.1544ms
+2022-11-01 23:10:29.789 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 116
+2022-11-01 23:10:29.791 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:29.792 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Core.Data.DTOs.CardDto, ProCards.Core.Data.Interfaces.ICardRepository) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:10:29.801 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-01 23:10:29.802 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 8.2458ms
+2022-11-01 23:10:29.804 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-01 23:10:29.806 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 116 - 204 - - 17.3169ms
+2022-11-01 23:10:38.512 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:10:38.513 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:10:38.515 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:10:38.517 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:10:38.521 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 3.6344ms
+2022-11-01 23:10:38.522 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:10:38.523 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 11.5345ms
+2022-11-01 23:10:38.542 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:10:38.543 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 23:10:38.545 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 2.8778ms
+2022-11-01 23:10:39.621 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:10:39.622 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:10:39.624 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:10:39.633 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:10:39.636 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 9.0965ms
+2022-11-01 23:10:39.638 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:10:39.640 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 18.7176ms
+2022-11-01 23:10:52.228 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:10:52.230 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:10:52.232 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:10:52.234 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:10:52.237 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 2.5531ms
+2022-11-01 23:10:52.238 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:10:52.240 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 11.8331ms
+2022-11-01 23:10:52.261 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:10:52.263 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 23:10:52.265 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 4.2968ms
+2022-11-01 23:10:53.692 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:10:53.693 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:10:53.694 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:10:53.703 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:10:53.706 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 8.524ms
+2022-11-01 23:10:53.708 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:10:53.712 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 20.5921ms
+2022-11-01 23:11:05.555 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/learn - -
+2022-11-01 23:11:05.557 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:11:05.558 +05:00 [INF] Route matched with {action = "Create", controller = "Learn"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ProCards.Web.Controllers.StaticControllers.LearnController (ProCards.Web).
+2022-11-01 23:11:05.562 +05:00 [INF] Executing VirtualFileResult, sending file '~/learn.html' with download name '' ...
+2022-11-01 23:11:05.564 +05:00 [INF] Executed action ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web) in 2.2868ms
+2022-11-01 23:11:05.565 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.StaticControllers.LearnController.Create (ProCards.Web)'
+2022-11-01 23:11:05.567 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/learn - - - 304 - - 11.5941ms
+2022-11-01 23:11:05.584 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/js/learn.js - -
+2022-11-01 23:11:05.586 +05:00 [INF] The file /js/learn.js was not modified
+2022-11-01 23:11:05.588 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/js/learn.js - - - 304 - application/javascript 4.0160ms
+2022-11-01 23:11:07.838 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - -
+2022-11-01 23:11:07.839 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:11:07.841 +05:00 [INF] Route matched with {action = "GetCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCard(ProCards.Core.Data.Interfaces.ICardRepository, System.String, Boolean) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-01 23:11:07.848 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProCards.Core.Data.DTOs.CardDto, ProCards.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-01 23:11:07.850 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web) in 7.4929ms
+2022-11-01 23:11:07.852 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCard (ProCards.Web)'
+2022-11-01 23:11:07.854 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0&isuser=true - - - 200 - application/json;+charset=utf-8 16.3052ms

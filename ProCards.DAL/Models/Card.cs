@@ -6,7 +6,9 @@ public class Card: ModelBase
     
     public string? SecondSide { get; set; }
     
-    public Category Category { get; set; }
+    public Category? Category { get; set; }
     
     public DateTime? PublishedAt { get; set; }
+    
+    public ICollection<Grade>? Grades { get; set; }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ppxmvfcMEyqRH+zsWNpg89XPPg2JynlS2N3G6QUiCYY=",
+  "Hash": "gBidv3x1sO730GobqALp/fJj73nMBPC20ybHtkPziAI=",
   "Source": "ProCards.Web",
   "BasePath": "_content/ProCards.Web",
   "Mode": "Default",
@@ -250,9 +250,26 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
+      "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\create.js"
+    },
+    {
+      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\js\\learn.js",
+      "SourceId": "ProCards.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
+      "BasePath": "_content/ProCards.Web",
+      "RelativePath": "js/learn.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\learn.js"
     },
     {
       "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\learn.html",

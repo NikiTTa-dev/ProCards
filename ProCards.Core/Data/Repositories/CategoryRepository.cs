@@ -4,7 +4,7 @@ using ProCards.DAL.Models;
 
 namespace ProCards.Core.Data.Repositories;
 
-public class CategoryRepository: ICategoryRepository
+public class CategoryRepository : ICategoryRepository
 {
     private AppDbContext _context;
 
@@ -12,18 +12,18 @@ public class CategoryRepository: ICategoryRepository
     {
         _context = context;
     }
-    
+
     public IEnumerable<Category> GetNineCategories(int firstCategoryId)
     {
         var categories = _context.Categories;
         var categoriesCount = categories.Count();
-        
+
         if (categoriesCount < firstCategoryId)
             firstCategoryId = 1;
-        
+
         if (categoriesCount - firstCategoryId + 1 < 9)
             firstCategoryId = categoriesCount - 8;
-        
+
         return categories
             .Where(c => c.Id >= firstCategoryId)
             .Take(9)
@@ -35,28 +35,19 @@ public class CategoryRepository: ICategoryRepository
         throw new NotImplementedException();
     }
 
-    public int InsertCategory(Category name)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void Save()
-    {
-        throw new NotImplementedException();
-    }
-    
-    private bool _disposed = false;
+    private bool _disposed;
 
     protected virtual void Dispose(bool disposing)
     {
-        if (!this._disposed)
+        if (!_disposed)
         {
             if (disposing)
             {
                 _context.Dispose();
             }
         }
-        this._disposed = true;
+
+        _disposed = true;
     }
 
     public void Dispose()

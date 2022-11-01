@@ -1,0 +1,12 @@
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.DAL\bin\Release\net6.0\ProCards.DAL.deps.json
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.DAL\bin\Release\net6.0\ProCards.DAL.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.DAL\bin\Release\net6.0\ProCards.DAL.pdb
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.DAL\obj\Release\net6.0\ProCards.DAL.csproj.AssemblyReference.cache
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.DAL\obj\Release\net6.0\ProCards.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.DAL\obj\Release\net6.0\ProCards.DAL.AssemblyInfoInputs.cache
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.DAL\obj\Release\net6.0\ProCards.DAL.AssemblyInfo.cs
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.DAL\obj\Release\net6.0\ProCards.DAL.csproj.CoreCompileInputs.cache
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.DAL\obj\Release\net6.0\ProCards.DAL.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.DAL\obj\Release\net6.0\refint\ProCards.DAL.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.DAL\obj\Release\net6.0\ProCards.DAL.pdb
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.DAL\obj\Release\net6.0\ref\ProCards.DAL.dll

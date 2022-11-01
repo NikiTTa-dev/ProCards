@@ -17,5 +17,7 @@ public class CardConfiguration : IEntityTypeConfiguration<Card>
         builder.HasOne(p => p.Category)
             .WithMany(c => c.Cards)
             .IsRequired();
+        builder.HasMany(p => p.Grades)
+            .WithOne(c => c.Card);
     }
 }
