@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -15,202 +14,222 @@
 </head>
 
 <body>
-<header>
-    <p class="logo">PROCARDS</p>
-    <nav>
-        <ul class="header-nav">
-            <li><a href="main.html">ГЛАВНАЯ</a></li>
-            <li><a href="#" class="curent">ОБУЧЕНИЕ</a></li>
-            <li><a href="create.html">СОЗДАТЬ КАРТОЧКИ</a></li>
-        </ul>
-    </nav>
-</header>
-<hr>
-<main>
-    <form>
-        <h2>Выберите категорию для обучения</h2>
-        <section class="categories">
-            <h3>Категории</h3>
-            <ul class="cards">
+    <header>
+        <p class="logo">PROCARDS</p>
+        <nav>
+            <ul class="header-nav">
+                <li><a href="index.html">ГЛАВНАЯ</a></li>
+                <li><a href="#" class="curent">ОБУЧЕНИЕ</a></li>
+                <li><a href="create.html">СОЗДАТЬ КАРТОЧКИ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <form>
+            <h2>Выберите категорию для обучения</h2>
+            <section class="categories">
+                <h3>Категории</h3>
+                <ul class="cards">
+                    <li>
+                        <label>
+                            <span>Алгебра</span>
+                            <input name="category" type="radio" value="алгебра">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span>Английский язык</span>
+                            <input name="category" type="radio" value="английский">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span>География</span>
+                            <input name="category" type="radio" value="география">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span>Информатика</span>
+                            <input name="category" type="radio" value="информатика">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span>Русский язык</span>
+                            <input name="category" type="radio" value="русский">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span>Физика</span>
+                            <input name="category" type="radio" value="физика">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span>История</span>
+                            <input name="category" type="radio" value="история">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span>Биология</span>
+                            <input name="category" type="radio" value="биология">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span>Химия</span>
+                            <input name="category" type="radio" value="химия">
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span>ОБЖ</span>
+                            <input name="category" type="radio" value="обж">
+                        </label>
+                    </li>
+                </ul>
+            </section>
+            <section class="categories">
+                <h3>Категории от пользователей</h3>
+                <ul class="user-cards">
+                    <li>
+                        <label class="user-card">
+                            <span>Физика</span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="user-card">
+                            <span>Информатика</span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="user-card">
+                            <span>Пусто</span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="user-card">
+                            <span>Пусто</span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="user-card">
+                            <span>Пусто</span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="user-card">
+                            <span>Пусто</span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="user-card">
+                            <span>Пусто</span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="user-card">
+                            <span>Пусто</span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="user-card">
+                            <span>Пусто</span>
+                            <input name="category" type="radio">
+                        </label>
+                    </li>
+                    <li>
+                        <button type="button" class="refresh-button"><img src="./content/refresh.svg" alt="refresh"
+                                width="40" style="transform: rotate(-120deg);"></button>
+                    </li>
+                </ul>
+            </section>
+        </form>
+
+        <section class="deck">
+            <h2>Колода для изучения</h2>
+            <div class="deck-content">
+                <span>Нажатия на карточку <br>перевернет ее</span>
+                <button class="card big-card">
+                    <!-- <span class="standart">Лицевая сторона</span> -->
+                    <div class="wrapper">
+                        <div class="big-card-content">Лицевая сторона</div>
+                    </div>
+                </button>
+                <ul class="score">
+                    <li>
+                        <div class="circle worst"></div>
+                        <span class="worst-value">0</span>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="circle bad"></div>
+                        <span class="bad-value">0</span>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="circle normal"></div>
+                        <span class="normal-value">0</span>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="circle good"></div>
+                        <span class="good-value">0</span>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="circle well"></div>
+                        <span class="well-value">0</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="rating hidden">
+            <h3>Оцените насколько вы знали содержимое карточки</h3>
+            <ul class="rating-buttons">
                 <li>
-                    <label>
-                        <span>Алгебра</span>
-                        <input name="category" type="radio" value="алгебра">
-                    </label>
+                    <button class="rating-button worst" value="1">1</button>
                 </li>
                 <li>
-                    <label>
-                        <span>Английский язык</span>
-                        <input name="category" type="radio" value="английский">
-                    </label>
+                    <button class="rating-button bad" value="2">2</button>
                 </li>
                 <li>
-                    <label>
-                        <span>География</span>
-                        <input name="category" type="radio" value="география">
-                    </label>
+                    <button class="rating-button normal" value="3">3</button>
                 </li>
                 <li>
-                    <label>
-                        <span>Информатика</span>
-                        <input name="category" type="radio" value="информатика">
-                    </label>
+                    <button class="rating-button good" value="4">4</button>
                 </li>
                 <li>
-                    <label>
-                        <span>Русский язык</span>
-                        <input name="category" type="radio" value="русский">
-                    </label>
+                    <button class="rating-button well" value="5">5</button>
                 </li>
-                <li>
-                    <label>
-                        <span>Физика</span>
-                        <input name="category" type="radio" value="физика">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <span>История</span>
-                        <input name="category" type="radio" value="история">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <span>Биология</span>
-                        <input name="category" type="radio" value="биология">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <span>Химия</span>
-                        <input name="category" type="radio" value="химия">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <span>ОБЖ</span>
-                        <input name="category" type="radio" value="обж">
-                    </label>
-                </li>
+
             </ul>
         </section>
-        <!-- <section class="categories">
-            <h3>Категории от пользователей</h3>
-            <ul class="user-cards">
-                <li>
-                    <label>
-                        <span>Физика</span>
-                        <input name="category" type="radio">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <span>Информатика</span>
-                        <input name="category" type="radio">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <span>Пусто</span>
-                        <input name="category" type="radio">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <span>Пусто</span>
-                        <input name="category" type="radio">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <span>Пусто</span>
-                        <input name="category" type="radio">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <span>Пусто</span>
-                        <input name="category" type="radio">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <span>Пусто</span>
-                        <input name="category" type="radio">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <span>Пусто</span>
-                        <input name="category" type="radio">
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <span>Пусто</span>
-                        <input name="category" type="radio">
-                    </label>
-                </li>
-                <li>
-                    <button class="refresh-button"><img src="content/refresh.svg" alt="refresh" width="40"
-                            style="transform: rotate(-120deg);"></button>
-                </li>
-            </ul>
-        </section> -->
-    </form>
-
-    <section class="deck">
-        <h2>Колода для изучения</h2>
-        <div class="deck-content">
-            <span>Нажатия на карточку перевернет ее</span>
-            <button class="card big-card">Лицевая сторона</button>
-            <ul class="score">
-                <li>00</li>
-                <br>
-                <li>00</li>
-                <br>
-                <li>00</li>
-                <br>
-                <li>00</li>
-                <br>
-                <li>00</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="rating hidden">
-        <h3>Оцените насколько вы знали содержимое карточки</h3>
-        <ul class="rating-buttons">
-            <li>
-                <button class="rating-button worst">1</button>
-            </li>
-            <li>
-                <button class="rating-button bad">2</button>
-            </li>
-            <li>
-                <button class="rating-button normal">3</button>
-            </li>
-            <li>
-                <button class="rating-button good">4</button>
-            </li>
-            <li>
-                <button class="rating-button well">5</button>
-            </li>
-
+    </main>
+    <hr>
+    <footer>
+        <ul class="footer-nav">
+            <li><a href="#">О НАС</a></li>
+            <li><a href="#">ПОДДЕРЖКА</a></li>
+            <li><a href="#">УСЛОВИЯ</a></li>
+            <li><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
         </ul>
-    </section>
-</main>
-<hr>
-<footer>
-    <ul class="footer-nav">
-        <li><a href="#">О НАС</a></li>
-        <li><a href="#">ПОДДЕРЖКА</a></li>
-        <li><a href="#">УСЛОВИЯ</a></li>
-        <li><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
-    </ul>
-    <p class="copyright">PROCARDS ©2022 Все права защищены</p>
-</footer>
-<script src="./js/learn.js"></script>
+        <p class="copyright">PROCARDS ©2022 Все права защищены</p>
+    </footer>
+    <script type="module" src="./js/learn.js"></script>
 </body>
 
 </html>

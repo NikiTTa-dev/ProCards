@@ -384,6 +384,33 @@
           "lib/net6.0/MySql.EntityFrameworkCore.dll": {}
         }
       },
+      "Npgsql/6.0.7": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Npgsql.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.dll": {}
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/6.0.7": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.7",
+          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.7",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.7",
+          "Npgsql": "6.0.7"
+        },
+        "compile": {
+          "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+        }
+      },
       "Portable.BouncyCastle/1.9.0": {
         "type": "package",
         "compile": {
@@ -773,27 +800,13 @@
           }
         }
       },
-      "ProCards.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.10",
-          "MySql.EntityFrameworkCore": "6.0.7",
-          "ProCards.DAL": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ProCards.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ProCards.Core.dll": {}
-        }
-      },
       "ProCards.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.10",
-          "MySql.EntityFrameworkCore": "6.0.7"
+          "MySql.EntityFrameworkCore": "6.0.7",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.7"
         },
         "compile": {
           "bin/placeholder/ProCards.DAL.dll": {}
@@ -1395,6 +1408,44 @@
         "lib/net6.0/MySql.EntityFrameworkCore.xml",
         "mysql.entityframeworkcore.6.0.7.nupkg.sha512",
         "mysql.entityframeworkcore.nuspec"
+      ]
+    },
+    "Npgsql/6.0.7": {
+      "sha512": "HhD5q/VUJY++tCzc0eCrhtsxmUdP7NxNhUMOdYW6sqpC6NRlFLvUDf5JyRj0gOGkXe3Tn49toaisgvLqlzQ2JQ==",
+      "type": "package",
+      "path": "npgsql/6.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net5.0/Npgsql.dll",
+        "lib/net5.0/Npgsql.xml",
+        "lib/net6.0/Npgsql.dll",
+        "lib/net6.0/Npgsql.xml",
+        "lib/netcoreapp3.1/Npgsql.dll",
+        "lib/netcoreapp3.1/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "lib/netstandard2.1/Npgsql.dll",
+        "lib/netstandard2.1/Npgsql.xml",
+        "npgsql.6.0.7.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/6.0.7": {
+      "sha512": "kqwX2V9Znw/QjLDL6SyYEHiy9toMuqMTyCJ4ebQu65FpV8pElYKpOlBbxoyr6YNgqieXEMmpnE0TIoTKsVdeLw==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql/6.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.xml",
+        "npgsql.entityframeworkcore.postgresql.6.0.7.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec",
+        "postgresql.png"
       ]
     },
     "Portable.BouncyCastle/1.9.0": {
@@ -2116,11 +2167,6 @@
         "version.txt"
       ]
     },
-    "ProCards.Core/1.0.0": {
-      "type": "project",
-      "path": "../ProCards.Core/ProCards.Core.csproj",
-      "msbuildProject": "../ProCards.Core/ProCards.Core.csproj"
-    },
     "ProCards.DAL/1.0.0": {
       "type": "project",
       "path": "../ProCards.DAL/ProCards.DAL.csproj",
@@ -2131,7 +2177,7 @@
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 6.0.10",
       "MySql.EntityFrameworkCore >= 6.0.7",
-      "ProCards.Core >= 1.0.0",
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.7",
       "ProCards.DAL >= 1.0.0",
       "Serilog.AspNetCore >= 6.0.1",
       "Swashbuckle.AspNetCore >= 6.2.3"
@@ -2169,9 +2215,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Core\\ProCards.Core.csproj": {
-              "projectPath": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Core\\ProCards.Core.csproj"
-            },
             "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.DAL\\ProCards.DAL.csproj": {
               "projectPath": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.DAL\\ProCards.DAL.csproj"
             }
@@ -2193,6 +2236,10 @@
             "version": "[6.0.10, )"
           },
           "MySql.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.7, )"
+          },
+          "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
             "version": "[6.0.7, )"
           },

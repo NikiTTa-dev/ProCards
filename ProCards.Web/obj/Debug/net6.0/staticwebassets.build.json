@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gBidv3x1sO730GobqALp/fJj73nMBPC20ybHtkPziAI=",
+  "Hash": "foqtrfrNPfrFkmItWFohs5/33dFPbi2a9BFrnf4Hx64=",
   "Source": "ProCards.Web",
   "BasePath": "_content/ProCards.Web",
   "Mode": "Default",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\.DS_Store",
-      "SourceId": "ProCards.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
-      "BasePath": "_content/ProCards.Web",
-      "RelativePath": ".DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\.DS_Store"
-    },
-    {
-      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\content\\.DS_Store",
-      "SourceId": "ProCards.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
-      "BasePath": "_content/ProCards.Web",
-      "RelativePath": "content/.DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\content\\.DS_Store"
-    },
     {
       "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\content\\arrow.svg",
       "SourceId": "ProCards.Web",
@@ -238,6 +204,23 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
+      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\js\\api.js",
+      "SourceId": "ProCards.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
+      "BasePath": "_content/ProCards.Web",
+      "RelativePath": "js/api.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\api.js"
+    },
+    {
       "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\js\\create.js",
       "SourceId": "ProCards.Web",
       "SourceType": "Discovered",
@@ -270,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\learn.js"
+    },
+    {
+      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\js\\validationForm.js",
+      "SourceId": "ProCards.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
+      "BasePath": "_content/ProCards.Web",
+      "RelativePath": "js/validationForm.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\validationForm.js"
     },
     {
       "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\learn.html",

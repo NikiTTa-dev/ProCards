@@ -4,11 +4,20 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ProCards.Core.Data.Interfaces;
-using ProCards.Core.Data.Repositories;
 using ProCards.DAL;
 using ProCards.DAL.Context;
+using ProCards.DAL.Interfaces;
+using ProCards.DAL.Repositories;
 using Serilog;
+
+//TODO:
+// Навесить NotNull атрибуты на дто для базы данных
+// Реализовать ExceptionHandler
+// Настроить логирование на игнорирование запросов к Index, Create, Learn
+// Реализовать ответ на ошибки
+// Валидация данных
+// 
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,7 +31,6 @@ builder.Services.AddSwaggerGen();
 string connectionString = builder.Configuration.GetConnectionString("MySqlConnection");
 builder.Services.AddDbContext(connectionString);
 
-builder.Services.AddScoped<AppDbContext>();
 builder.Services.AddScoped<ICardRepository, CardRepository>();
 
 var app = builder.Build();
@@ -63,7 +71,7 @@ using (var scope = app.Services.CreateScope())
     try
     {
         var context = services.GetRequiredService<AppDbContext>();
-        //context.Database.EnsureDeleted();
+        context.Database.EnsureDeleted();
         context.Database.EnsureCreated();
     }
     catch (Exception ex)

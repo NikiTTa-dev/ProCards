@@ -7,16 +7,17 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
         <PackageReference Include="MySql.EntityFrameworkCore" Version="6.0.7" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.7" />
         <PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ProCards.Core\ProCards.Core.csproj" />
       <ProjectReference Include="..\ProCards.DAL\ProCards.DAL.csproj" />
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Data" />
       <Folder Include="wwwroot\css" />
     </ItemGroup>
 
@@ -24,6 +25,7 @@
       <None Update="Properties\launchSettings.json">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
+      <None Remove="Logs\log20221109.txt" />
     </ItemGroup>
 
     <ItemGroup>

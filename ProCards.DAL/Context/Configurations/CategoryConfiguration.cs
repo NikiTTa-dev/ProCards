@@ -4,9 +4,9 @@ using ProCards.DAL.Models;
 
 namespace ProCards.DAL.Context.Configurations;
 
-public class CategoryConfiguration: IEntityTypeConfiguration<Category>
+public class CategoryConfiguration: IEntityTypeConfiguration<CategoryDal>
 {
-    public void Configure(EntityTypeBuilder<Category> builder)
+    public void Configure(EntityTypeBuilder<CategoryDal> builder)
     {
         builder.Property(p => p.Name)
             .HasMaxLength(ConfigurationConstants.MaxCategoryNameLength)

@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using ProCards.DAL.Models;
@@ -11,9 +12,12 @@ public class AppDbContext: DbContext
         base(options)
     { }
     
-    public DbSet<Card>? Cards { get; set; }
-    public DbSet<Category>? Categories { get; set; }
-    public DbSet<Grade>? Grades { get; set; }
+    [NotNull]
+    public DbSet<CardDal>? Cards { get; init; }
+    [NotNull]
+    public DbSet<CategoryDal>? Categories { get; init; }
+    [NotNull]
+    public DbSet<GradeDal>? Grades { get; init; }
 
     private readonly StreamWriter _logStream = new ("logs/EFLog.txt", append: true);
 
