@@ -4,18 +4,20 @@ using ProCards.DAL.Models;
 
 namespace ProCards.DAL.Context.Configurations;
 
-public class CardConfiguration : IEntityTypeConfiguration<Card>
+public class CardConfiguration : IEntityTypeConfiguration<CardDal>
 {
-    public void Configure(EntityTypeBuilder<Card> builder)
+    public void Configure(EntityTypeBuilder<CardDal> builder)
     {
         builder.Property(p => p.FirstSide)
-            .HasMaxLength(ConfigurationConstants.MaxCardFirstSideLength)
+            .HasMaxLength(ConfigurationConstants.MaxCardSideLength)
             .IsRequired();
         builder.Property(p => p.SecondSide)
-            .HasMaxLength(ConfigurationConstants.MaxCardSecondSideLength)
+            .HasMaxLength(ConfigurationConstants.MaxCardSideLength)
             .IsRequired();
         builder.HasOne(p => p.Category)
             .WithMany(c => c.Cards)
             .IsRequired();
+        builder.HasMany(p => p.Grades)
+            .WithOne(c => c.Card);
     }
 }

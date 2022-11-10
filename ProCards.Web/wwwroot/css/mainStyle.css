@@ -16,6 +16,8 @@ header {
 
 hr {
   opacity: 0.2;
+  margin: 0;
+  padding: 0;
 }
 
 nav {

@@ -9,7 +9,8 @@
       "ProCards.DAL/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.10",
-          "MySql.EntityFrameworkCore": "6.0.7"
+          "MySql.EntityFrameworkCore": "6.0.7",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.7"
         },
         "runtime": {
           "ProCards.DAL.dll": {}
@@ -248,6 +249,31 @@
         },
         "runtime": {
           "lib/net6.0/MySql.EntityFrameworkCore.dll": {
+            "assemblyVersion": "6.0.7.0",
+            "fileVersion": "6.0.7.0"
+          }
+        }
+      },
+      "Npgsql/6.0.7": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.dll": {
+            "assemblyVersion": "6.0.7.0",
+            "fileVersion": "6.0.7.0"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/6.0.7": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.10",
+          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.10",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.7",
+          "Npgsql": "6.0.7"
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
             "assemblyVersion": "6.0.7.0",
             "fileVersion": "6.0.7.0"
           }
@@ -524,6 +550,20 @@
       "sha512": "sha512-wjrO6ts+xYji32kwSX0tsPIzEEa7UM+h1UAx5O2OXy1eX10Gzpm8jPYMbNSJGnxQ2c2nrPoyPMIAba1yxbNmUQ==",
       "path": "mysql.entityframeworkcore/6.0.7",
       "hashPath": "mysql.entityframeworkcore.6.0.7.nupkg.sha512"
+    },
+    "Npgsql/6.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HhD5q/VUJY++tCzc0eCrhtsxmUdP7NxNhUMOdYW6sqpC6NRlFLvUDf5JyRj0gOGkXe3Tn49toaisgvLqlzQ2JQ==",
+      "path": "npgsql/6.0.7",
+      "hashPath": "npgsql.6.0.7.nupkg.sha512"
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/6.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kqwX2V9Znw/QjLDL6SyYEHiy9toMuqMTyCJ4ebQu65FpV8pElYKpOlBbxoyr6YNgqieXEMmpnE0TIoTKsVdeLw==",
+      "path": "npgsql.entityframeworkcore.postgresql/6.0.7",
+      "hashPath": "npgsql.entityframeworkcore.postgresql.6.0.7.nupkg.sha512"
     },
     "Portable.BouncyCastle/1.9.0": {
       "type": "package",

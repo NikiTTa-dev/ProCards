@@ -51,6 +51,7 @@ h3 {
     justify-content: center;
     text-decoration: none;
     padding: 0;
+    border: 0px;
 }
 
 .cards li:nth-child(2n)>label {
@@ -111,24 +112,45 @@ label:active {
 }
 
 .big-card {
-    margin: 0 auto 0 50px;
-    padding: 20px;
+    display: block;
     width: 300px;
     height: 200px;
+    margin: 0 auto 0 180px;
     background: linear-gradient(113.35deg, #246FCC 3.29%, #163152 95.15%);
+    color: white;
     border: 0px;
     border-radius: 15px;
-    color: white;
+}
+
+.big-card-content {
+    display: inline-block;
+    max-width: 260px;
+    max-height: 160px;
     font-size: 14px;
-    word-wrap: break-word;
+    line-height: 20px;
     text-align: center;
-    text-decoration: none;
+    word-wrap: break-word;
+    overflow: scroll;
 }
 
 .score {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.score li {
+    display: flex;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 3px;
+    left: -20px;
+    border-radius: 50%;
 }
 
 .rating {
@@ -174,4 +196,9 @@ label:active {
 
 .well {
     background: linear-gradient(47.45deg, #00C6BD 20.48%, #07DF91 79.09%);
+}
+
+.hidden,
+textarea[type=hidden] {
+    display: none;
 }

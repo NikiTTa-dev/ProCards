@@ -4,13 +4,14 @@ using ProCards.DAL.Models;
 
 namespace ProCards.DAL.Context.Configurations;
 
-public class GradeConfiguration: IEntityTypeConfiguration<Grade>
+public class GradeConfiguration: IEntityTypeConfiguration<GradeDal>
 {
-    public void Configure(EntityTypeBuilder<Grade> builder)
+    public void Configure(EntityTypeBuilder<GradeDal> builder)
     {
         builder.Property(p => p.GradeNumber)
             .IsRequired();
-        builder.Navigation(p => p.Card)
+        builder.HasOne(p => p.Card)
+            .WithMany(g => g.Grades)
             .IsRequired();
     }
 }

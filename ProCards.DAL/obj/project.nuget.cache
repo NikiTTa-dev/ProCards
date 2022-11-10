@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dALnVZrksX9QFHbOtZ3aGJpCzEZjSKU/lMQb/u5isDPh7fMrKw96ykdZLuBR4mw5bMEVczjAtjVOBNlYZ+0+LQ==",
+  "dgSpecHash": "Y9RmjwaviGOIt5SeSaIzp+YyENqXkDdwPiahcX5s6IGoXHLS7ch2q0/7fNIqug9ZUy26FicicmYvVZLdAhzgWw==",
   "success": true,
   "projectFilePath": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.DAL\\ProCards.DAL.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,8 @@
     "C:\\Users\\nikit\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\mysql.data\\8.0.31\\mysql.data.8.0.31.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\mysql.entityframeworkcore\\6.0.7\\mysql.entityframeworkcore.6.0.7.nupkg.sha512",
+    "C:\\Users\\nikit\\.nuget\\packages\\npgsql\\6.0.7\\npgsql.6.0.7.nupkg.sha512",
+    "C:\\Users\\nikit\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.7\\npgsql.entityframeworkcore.postgresql.6.0.7.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
