@@ -2,9 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProCards.Web", "ProCards.Web\ProCards.Web.csproj", "{31C73F99-761B-495A-A0E1-A13EA27147BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProCards.Core", "ProCards.Core\ProCards.Core.csproj", "{F96CE0FB-D4A7-4EB3-B743-43771CBE9637}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProCards.Infrastructure", "ProCards.Infrastructure\ProCards.Infrastructure.csproj", "{046C7FA1-2DCA-441B-9FB8-497B4070DE5F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProCards.DAL", "ProCards.DAL\ProCards.DAL.csproj", "{046C7FA1-2DCA-441B-9FB8-497B4070DE5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,10 +14,6 @@ Global
 		{31C73F99-761B-495A-A0E1-A13EA27147BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31C73F99-761B-495A-A0E1-A13EA27147BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31C73F99-761B-495A-A0E1-A13EA27147BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F96CE0FB-D4A7-4EB3-B743-43771CBE9637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F96CE0FB-D4A7-4EB3-B743-43771CBE9637}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F96CE0FB-D4A7-4EB3-B743-43771CBE9637}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F96CE0FB-D4A7-4EB3-B743-43771CBE9637}.Release|Any CPU.Build.0 = Release|Any CPU
 		{046C7FA1-2DCA-441B-9FB8-497B4070DE5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{046C7FA1-2DCA-441B-9FB8-497B4070DE5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{046C7FA1-2DCA-441B-9FB8-497B4070DE5F}.Release|Any CPU.ActiveCfg = Release|Any CPU

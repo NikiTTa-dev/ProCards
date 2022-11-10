@@ -4,16 +4,34 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using ProCards.Infrastructure.Data;
-using ProCards.Infrastructure;
+using ProCards.DAL;
+using ProCards.DAL.Context;
+using ProCards.DAL.Interfaces;
+using ProCards.DAL.Repositories;
+using Serilog;
+
+//TODO:
+// Навесить NotNull атрибуты на дто для базы данных
+// Реализовать ExceptionHandler
+// Настроить логирование на игнорирование запросов к Index, Create, Learn
+// Реализовать ответ на ошибки
+// Валидация данных
+// 
+
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Host.UseSerilog((_, config)=>config.ReadFrom.Configuration(builder.Configuration));
+
 builder.Services.AddControllersWithViews();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 string connectionString = builder.Configuration.GetConnectionString("MySqlConnection");
 builder.Services.AddDbContext(connectionString);
+
+builder.Services.AddScoped<ICardRepository, CardRepository>();
 
 var app = builder.Build();
 
@@ -25,7 +43,24 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseStaticFiles();
+
 app.UseAuthorization();
+
+// app.Use(async (HttpContext context, Func<Task> next) =>
+// {
+//     using (var scope = app.Services.CreateScope())
+//     {
+//         AppDbContext dbContext = context.RequestServices.GetRequiredService<AppDbContext>();
+//         var rep = new CategoryRepository(dbContext);
+//         // var a = rep.GetNineCategories(1);
+//         // var b = rep.GetNineCategories(10);
+//         // var c = rep.GetNineCategories(15);
+//         // var rep = new CardRepository(dbContext);
+//         // var a = rep.GetFiveCards("asdasd", true);
+//         await next.Invoke();
+//     }
+// });
 
 app.MapControllers();
 
