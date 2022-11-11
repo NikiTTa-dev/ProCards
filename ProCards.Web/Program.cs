@@ -8,14 +8,15 @@ using ProCards.DAL;
 using ProCards.DAL.Context;
 using ProCards.DAL.Interfaces;
 using ProCards.DAL.Repositories;
+using ProCards.Web;
+using ProCards.Web.Profiles;
 using Serilog;
 
 //TODO:
-// Навесить NotNull атрибуты на дто для базы данных
+// 
 // Реализовать ExceptionHandler
 // Настроить логирование на игнорирование запросов к Index, Create, Learn
 // Реализовать ответ на ошибки
-// Валидация данных
 // 
 
 
@@ -23,7 +24,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Host.UseSerilog((_, config)=>config.ReadFrom.Configuration(builder.Configuration));
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -31,7 +32,9 @@ builder.Services.AddSwaggerGen();
 string connectionString = builder.Configuration.GetConnectionString("MySqlConnection");
 builder.Services.AddDbContext(connectionString);
 
-builder.Services.AddScoped<ICardRepository, CardRepository>();
+builder.Services.AddTransient<ICardRepository, CardRepository>();
+
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 var app = builder.Build();
 
@@ -73,6 +76,7 @@ using (var scope = app.Services.CreateScope())
         var context = services.GetRequiredService<AppDbContext>();
         context.Database.EnsureDeleted();
         context.Database.EnsureCreated();
+        SeedData.SeedDbData(context);
     }
     catch (Exception ex)
     {

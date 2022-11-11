@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "VUCYtCsI+LTT0MqvSHH9eLRPLJEAqy2hEBHt9jvY12elsQKCOPCJGW543zpgUyQmj3zclR+L7KTUUBXgvCgv5A==",
+  "dgSpecHash": "xDR4UAz4GMNLbeRQldjBJM+Vg+ma96zl/6tSpLFAxStGvoUqc96j2KapHHv9h2REJZH46fEtDzlixWCYUwQsnw==",
   "success": true,
   "projectFilePath": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\ProCards.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nikit\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\nikit\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
+    "C:\\Users\\nikit\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.10\\microsoft.entityframeworkcore.abstractions.6.0.10.nupkg.sha512",
     "C:\\Users\\nikit\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.10\\microsoft.entityframeworkcore.analyzers.6.0.10.nupkg.sha512",

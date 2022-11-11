@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ProCards.DAL.Interfaces;
@@ -20,11 +22,16 @@ public class CardController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult PostCard([FromBody] CardDal card, [FromServices] ICardRepository cardRepository)
+    public IActionResult PostCard(
+        [FromBody] CardDto card,
+        [FromServices] ICardRepository cardRepository,
+        [FromServices] IMapper mapper
+        )
     {
         try
         {
-            cardRepository.InsertCardWithCategory(card);
+            var cardDal = mapper.Map<CardDal>(card);
+            cardRepository.InsertCardWithCategory(cardDal);
             cardRepository.Save();
             return NoContent();
         }
@@ -37,14 +44,19 @@ public class CardController : ControllerBase
     }
 
     [HttpGet]
-    public IActionResult GetCard([FromServices] ICardRepository cardRepository, [FromQuery] string name,
-        [FromQuery] bool isUser, [FromQuery] int count)
+    public IActionResult GetCards(
+        [FromServices] ICardRepository cardRepository,
+        [FromServices] IMapper mapper,
+        [FromQuery] string name,
+        [FromQuery] bool isUser,
+        [FromQuery] int count)
     {
         List<CardDal> card;
         try
         {
             card = cardRepository.GetCards(name, isUser, count);
-            return Ok(card);
+            var cardDto = mapper.Map<CardDto>(card.FirstOrDefault());
+            return Ok(cardDto);
         }
         catch (Exception ex)
         {
@@ -52,5 +64,11 @@ public class CardController : ControllerBase
         }
 
         return BadRequest("No cards in this category or server error.");
+    }
+
+    [HttpGet("new")]
+    public IActionResult GetNewCardCollection([FromBody] List<CardDto> cardDtos)
+    {
+        return Ok();
     }
 }

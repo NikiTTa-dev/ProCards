@@ -66,3 +66,5 @@ C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\
 C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\wwwroot\js\create.js
 C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\Npgsql.dll
 C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

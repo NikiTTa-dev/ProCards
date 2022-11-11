@@ -14,8 +14,10 @@ public class AppDbContext: DbContext
     
     [NotNull]
     public DbSet<CardDal>? Cards { get; init; }
+    
     [NotNull]
     public DbSet<CategoryDal>? Categories { get; init; }
+    
     [NotNull]
     public DbSet<GradeDal>? Grades { get; init; }
 

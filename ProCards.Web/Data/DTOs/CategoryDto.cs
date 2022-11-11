@@ -10,4 +10,8 @@ public class CategoryDto
     [JsonPropertyName("name")]
     [MaxLength(ConfigurationConstants.MaxCategoryNameLength)]
     public string? Name { get; init; }
+    
+    [Required]
+    [JsonPropertyName("isUserCategory")]
+    public bool IsUserCategory { get; init; }
 }
