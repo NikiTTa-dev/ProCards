@@ -1,0 +1,169 @@
+2022-11-14 04:28:45.182 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-14 04:28:45.218 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-14 04:28:45.224 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 04:28:45.226 +05:00 [INF] Hosting environment: Development
+2022-11-14 04:28:45.227 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-14 04:28:47.628 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=string&isUser=true&count=21 - -
+2022-11-14 04:28:47.687 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCards (ProCards.Web)'
+2022-11-14 04:28:47.717 +05:00 [INF] Route matched with {action = "GetCards", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCards(System.String, Boolean, Int32) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:28:47.881 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-14 04:28:47.917 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCards (ProCards.Web) in 189.9255ms
+2022-11-14 04:28:47.924 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCards (ProCards.Web)'
+2022-11-14 04:28:47.935 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=string&isUser=true&count=21 - - - 400 - application/problem+json;+charset=utf-8 308.6197ms
+2022-11-14 04:28:53.616 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7141/cards?name=string&isUser=true&count=20 - -
+2022-11-14 04:28:53.621 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCards (ProCards.Web)'
+2022-11-14 04:28:53.624 +05:00 [INF] Route matched with {action = "GetCards", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCards(System.String, Boolean, Int32) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:28:54.052 +05:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2022-11-14 04:28:54.055 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetCards (ProCards.Web) in 427.6459ms
+2022-11-14 04:28:54.058 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetCards (ProCards.Web)'
+2022-11-14 04:28:54.060 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7141/cards?name=string&isUser=true&count=20 - - - 204 0 - 444.0305ms
+2022-11-14 04:33:43.140 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-14 04:33:43.173 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-14 04:33:43.177 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 04:33:43.179 +05:00 [INF] Hosting environment: Development
+2022-11-14 04:33:43.181 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-14 04:33:46.449 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 127
+2022-11-14 04:33:46.504 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-14 04:33:46.525 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Web.Data.DTOs.CardDto) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:33:47.010 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-14 04:33:47.020 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 487.948ms
+2022-11-14 04:33:47.025 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-14 04:33:47.054 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 127 - 204 - - 607.4410ms
+2022-11-14 04:34:02.535 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards/new application/json 230
+2022-11-14 04:34:02.539 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:34:02.548 +05:00 [INF] Route matched with {action = "GetNewCardCollection", controller = "Card"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetNewCardCollectionAsync(ProCards.Web.Logic.GradesLogic, System.Collections.Generic.List`1[ProCards.Web.Data.DTOs.CardDto]) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:34:02.566 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-14 04:34:02.578 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web) in 28.0478ms
+2022-11-14 04:34:02.584 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:34:02.587 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards/new application/json 230 - 400 - application/problem+json;+charset=utf-8 52.3275ms
+2022-11-14 04:34:24.378 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards/new application/json 230
+2022-11-14 04:34:24.381 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:34:24.383 +05:00 [INF] Route matched with {action = "GetNewCardCollection", controller = "Card"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetNewCardCollectionAsync(ProCards.Web.Logic.GradesLogic, System.Collections.Generic.List`1[ProCards.Web.Data.DTOs.CardDto]) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:34:24.389 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-14 04:34:24.393 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web) in 6.4215ms
+2022-11-14 04:34:24.397 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:34:24.398 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards/new application/json 230 - 400 - application/problem+json;+charset=utf-8 20.9262ms
+2022-11-14 04:42:46.747 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-14 04:42:46.781 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-14 04:42:46.784 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 04:42:46.786 +05:00 [INF] Hosting environment: Development
+2022-11-14 04:42:46.788 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-14 04:42:48.494 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 127
+2022-11-14 04:42:48.547 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-14 04:42:48.569 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Web.Data.DTOs.CardDto) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:42:49.004 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-14 04:42:49.014 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 436.8246ms
+2022-11-14 04:42:49.020 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-14 04:42:49.053 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 127 - 204 - - 560.5162ms
+2022-11-14 04:43:41.972 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards/new application/json 3847
+2022-11-14 04:43:41.981 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:43:41.993 +05:00 [INF] Route matched with {action = "GetNewCardCollection", controller = "Card"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetNewCardCollectionAsync(ProCards.Web.Logic.GradesLogic, System.Collections.Generic.List`1[ProCards.Web.Data.DTOs.CardDto]) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:43:42.023 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-14 04:43:42.036 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web) in 40.8834ms
+2022-11-14 04:43:42.042 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:43:42.045 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards/new application/json 3847 - 400 - application/problem+json;+charset=utf-8 73.8319ms
+2022-11-14 04:43:57.006 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards/new application/json 3846
+2022-11-14 04:43:57.009 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:43:57.011 +05:00 [INF] Route matched with {action = "GetNewCardCollection", controller = "Card"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetNewCardCollectionAsync(ProCards.Web.Logic.GradesLogic, System.Collections.Generic.List`1[ProCards.Web.Data.DTOs.CardDto]) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:43:57.020 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-14 04:43:57.023 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web) in 9.3146ms
+2022-11-14 04:43:57.028 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:43:57.031 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards/new application/json 3846 - 400 - application/problem+json;+charset=utf-8 24.9048ms
+2022-11-14 04:44:31.581 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-14 04:44:31.612 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-14 04:44:31.618 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 04:44:31.619 +05:00 [INF] Hosting environment: Development
+2022-11-14 04:44:31.621 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-14 04:44:32.062 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 127
+2022-11-14 04:44:32.123 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-14 04:44:32.146 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Web.Data.DTOs.CardDto) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:44:32.545 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-14 04:44:32.553 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 399.0159ms
+2022-11-14 04:44:32.559 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-14 04:44:32.582 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 127 - 204 - - 521.7813ms
+2022-11-14 04:44:36.086 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards/new application/json 3846
+2022-11-14 04:44:36.089 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:44:36.096 +05:00 [INF] Route matched with {action = "GetNewCardCollection", controller = "Card"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetNewCardCollectionAsync(ProCards.Web.Logic.GradesLogic, System.Collections.Generic.List`1[ProCards.Web.Data.DTOs.CardDto]) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:44:36.113 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-14 04:44:36.127 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web) in 28.8258ms
+2022-11-14 04:44:36.129 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:44:36.133 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards/new application/json 3846 - 400 - application/problem+json;+charset=utf-8 46.8638ms
+2022-11-14 04:45:51.067 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards/new application/json 3092
+2022-11-14 04:45:51.075 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:45:51.078 +05:00 [INF] Route matched with {action = "GetNewCardCollection", controller = "Card"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetNewCardCollectionAsync(ProCards.Web.Logic.GradesLogic, System.Collections.Generic.List`1[ProCards.Web.Data.DTOs.CardDto]) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:45:51.091 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-14 04:45:51.094 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web) in 10.0151ms
+2022-11-14 04:45:51.098 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:45:51.101 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards/new application/json 3092 - 400 - application/problem+json;+charset=utf-8 34.6092ms
+2022-11-14 04:46:18.751 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-14 04:46:18.785 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-14 04:46:18.789 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 04:46:18.790 +05:00 [INF] Hosting environment: Development
+2022-11-14 04:46:18.791 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-14 04:46:18.959 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 127
+2022-11-14 04:46:19.002 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-14 04:46:19.019 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Web.Data.DTOs.CardDto) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:46:19.432 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-14 04:46:19.439 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 412.8409ms
+2022-11-14 04:46:19.445 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-14 04:46:19.466 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 127 - 204 - - 508.2934ms
+2022-11-14 04:46:21.748 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards/new application/json 3092
+2022-11-14 04:46:21.752 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:46:21.757 +05:00 [INF] Route matched with {action = "GetNewCardCollection", controller = "Card"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetNewCardCollectionAsync(ProCards.Web.Logic.GradesLogic, System.Collections.Generic.List`1[ProCards.Web.Data.DTOs.CardDto]) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:46:21.775 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-14 04:46:21.787 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web) in 24.5702ms
+2022-11-14 04:46:21.791 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:46:21.795 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards/new application/json 3092 - 400 - application/problem+json;+charset=utf-8 46.4487ms
+2022-11-14 04:48:30.326 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-14 04:48:30.359 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-14 04:48:30.364 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 04:48:30.365 +05:00 [INF] Hosting environment: Development
+2022-11-14 04:48:30.366 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-14 04:48:36.071 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 127
+2022-11-14 04:48:36.130 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-14 04:48:36.150 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Web.Data.DTOs.CardDto) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:48:36.650 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-14 04:48:36.659 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 500.8747ms
+2022-11-14 04:48:36.663 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-14 04:48:36.688 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 127 - 204 - - 618.9610ms
+2022-11-14 04:48:38.715 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards/new application/json 3092
+2022-11-14 04:48:38.718 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:48:38.723 +05:00 [INF] Route matched with {action = "GetNewCardCollection", controller = "Card"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetNewCardCollectionAsync(ProCards.Web.Logic.GradesLogic, System.Collections.Generic.List`1[ProCards.Web.Data.DTOs.CardDto]) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:48:38.885 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2022-11-14 04:48:38.889 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web) in 163.2309ms
+2022-11-14 04:48:38.893 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:48:38.900 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards/new application/json 3092 - 200 0 - 184.4762ms
+2022-11-14 04:50:45.830 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-14 04:50:45.865 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-14 04:50:45.871 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 04:50:45.873 +05:00 [INF] Hosting environment: Development
+2022-11-14 04:50:45.875 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-14 04:50:52.017 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 127
+2022-11-14 04:50:52.075 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-14 04:50:52.096 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Web.Data.DTOs.CardDto) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:50:52.575 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-14 04:50:52.585 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 482.0664ms
+2022-11-14 04:50:52.588 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-14 04:50:52.618 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 127 - 204 - - 602.3581ms
+2022-11-14 04:50:55.757 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards/new application/json 3092
+2022-11-14 04:50:55.762 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:50:55.768 +05:00 [INF] Route matched with {action = "GetNewCardCollection", controller = "Card"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetNewCardCollectionAsync(ProCards.Web.Logic.GradesLogic, System.Collections.Generic.List`1[ProCards.Web.Data.DTOs.CardDto]) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:52:59.408 +05:00 [INF] Now listening on: https://localhost:7141
+2022-11-14 04:52:59.445 +05:00 [INF] Now listening on: http://localhost:5207
+2022-11-14 04:52:59.448 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-14 04:52:59.450 +05:00 [INF] Hosting environment: Development
+2022-11-14 04:52:59.451 +05:00 [INF] Content root path: C:\Users\nikit\OneDrive\Рабочий стол\ProCards\ProCards.Web\
+2022-11-14 04:53:02.103 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards application/json 127
+2022-11-14 04:53:02.156 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-14 04:53:02.177 +05:00 [INF] Route matched with {action = "PostCard", controller = "Card"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PostCard(ProCards.Web.Data.DTOs.CardDto) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:53:02.673 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-11-14 04:53:02.683 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web) in 499.9136ms
+2022-11-14 04:53:02.688 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.PostCard (ProCards.Web)'
+2022-11-14 04:53:02.713 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards application/json 127 - 204 - - 611.9067ms
+2022-11-14 04:53:05.496 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7141/cards/new application/json 3092
+2022-11-14 04:53:05.500 +05:00 [INF] Executing endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:53:05.506 +05:00 [INF] Route matched with {action = "GetNewCardCollection", controller = "Card"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetNewCardCollectionAsync(ProCards.Web.Logic.GradesLogic, System.Collections.Generic.List`1[ProCards.Web.Data.DTOs.CardDto]) on controller ProCards.Web.Controllers.ApiControllers.CardController (ProCards.Web).
+2022-11-14 04:53:05.528 +05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-14 04:53:05.537 +05:00 [INF] Executed action ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web) in 24.8323ms
+2022-11-14 04:53:05.543 +05:00 [INF] Executed endpoint 'ProCards.Web.Controllers.ApiControllers.CardController.GetNewCardCollectionAsync (ProCards.Web)'
+2022-11-14 04:53:05.545 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7141/cards/new application/json 3092 - 400 - application/problem+json;+charset=utf-8 48.5392ms

@@ -41,6 +41,8 @@ public class CardRepository : ICardRepository
 
     public void InsertCardWithCategory(CardDal card)
     {
+        if (card.Grades != null && card.Grades.Count > 0)
+            throw new ArgumentException("Card must have no grades when inserting to db.");
         _context.Cards.Add(card);
     }
 

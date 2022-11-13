@@ -9,7 +9,7 @@ public class CategoryDto
     [Required]
     [JsonPropertyName("name")]
     [MaxLength(ConfigurationConstants.MaxCategoryNameLength)]
-    public string? Name { get; init; }
+    public string Name { get; init; }
     
     [Required]
     [JsonPropertyName("isUserCategory")]

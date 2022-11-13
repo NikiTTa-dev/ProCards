@@ -10,7 +10,8 @@ public class GradeConfiguration: IEntityTypeConfiguration<GradeDal>
     {
         builder.Property(p => p.GradeNumber)
             .IsRequired();
-        builder.HasOne(p => p.Card)
+        builder
+            .HasOne(p => p.Card)
             .WithMany(g => g.Grades)
             .IsRequired();
     }

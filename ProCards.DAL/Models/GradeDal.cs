@@ -1,8 +1,13 @@
-﻿namespace ProCards.DAL.Models;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
-public class GradeDal: ModelBase
+namespace ProCards.DAL.Models;
+
+public class GradeDal: ModelBase<int>
 {
     public int GradeNumber { get; init; }
+    
+    [ForeignKey("Card")]
+    public string? CardId { get; set; }
     
     public CardDal? Card { get; init; }
     

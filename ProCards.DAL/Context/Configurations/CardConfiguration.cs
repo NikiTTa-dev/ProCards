@@ -8,6 +8,7 @@ public class CardConfiguration : IEntityTypeConfiguration<CardDal>
 {
     public void Configure(EntityTypeBuilder<CardDal> builder)
     {
+        builder.HasKey(p => p.FirstSide);
         builder.Property(p => p.FirstSide)
             .HasMaxLength(ConfigurationConstants.MaxCardSideLength)
             .IsRequired();

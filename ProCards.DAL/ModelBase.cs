@@ -1,6 +1,6 @@
 ﻿namespace ProCards.DAL;
 
-public abstract class ModelBase
+public abstract class ModelBase<T>
 {
-    public int Id { get; set; }
+    public T? Id { get; init; }
 }

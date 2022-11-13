@@ -8,8 +8,7 @@ using ProCards.DAL;
 using ProCards.DAL.Context;
 using ProCards.DAL.Interfaces;
 using ProCards.DAL.Repositories;
-using ProCards.Web;
-using ProCards.Web.Profiles;
+using ProCards.Web.Logic;
 using Serilog;
 
 //TODO:
@@ -29,10 +28,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-string connectionString = builder.Configuration.GetConnectionString("MySqlConnection");
+string connectionString = builder.Configuration.GetConnectionString("PostgreSqlConnection");
 builder.Services.AddDbContext(connectionString);
 
-builder.Services.AddTransient<ICardRepository, CardRepository>();
+builder.Services.AddScoped<ICardRepository, CardRepository>();
+builder.Services.AddScoped<IGradeRepository, GradeRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddTransient<GradesLogic>();
 
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
@@ -76,7 +78,7 @@ using (var scope = app.Services.CreateScope())
         var context = services.GetRequiredService<AppDbContext>();
         context.Database.EnsureDeleted();
         context.Database.EnsureCreated();
-        SeedData.SeedDbData(context);
+        //SeedData.SeedDbData(context);
     }
     catch (Exception ex)
     {

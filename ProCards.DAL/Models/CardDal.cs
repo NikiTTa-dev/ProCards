@@ -2,7 +2,7 @@
 
 namespace ProCards.DAL.Models;
 
-public class CardDal: ModelBase
+public class CardDal
 {
     public string? FirstSide { get; init; }
     

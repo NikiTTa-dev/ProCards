@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using ProCards.DAL.Context;
+﻿using ProCards.DAL.Context;
 using ProCards.DAL.Interfaces;
 using ProCards.DAL.Models;
 
@@ -7,26 +6,21 @@ namespace ProCards.DAL.Repositories;
 
 public class GradeRepository: IGradeRepository
 {
-    private AppDbContext _context;
+    private readonly AppDbContext _context;
     
     public GradeRepository(AppDbContext context)
     {
         _context = context;
     }
-    
-    public GradeDal GetGradeById(int gradeId)
+
+    public async Task InsertGradesAsync(List<GradeDal> gradeDals)
     {
-        throw new NotImplementedException();
+        await _context.Grades.AddRangeAsync(gradeDals);
     }
 
-    public void InsertGrade(GradeDal gradeDal)
+    public async Task SaveAsync()
     {
-        _context.Grades.Add(gradeDal);
-    }
-
-    public void Save()
-    {
-        _context.SaveChanges();
+        await _context.SaveChangesAsync();
     }
     
     private bool _disposed;

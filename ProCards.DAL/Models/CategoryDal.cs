@@ -1,6 +1,6 @@
 ﻿namespace ProCards.DAL.Models;
 
-public class CategoryDal: ModelBase
+public class CategoryDal: ModelBase<int>
 {
     public string? Name { get; init; }
     

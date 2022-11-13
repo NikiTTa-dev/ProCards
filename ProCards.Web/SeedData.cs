@@ -7,9 +7,9 @@ namespace ProCards.Web;
 
 public static class SeedData
 {
-    private const int CardsCount = 10;
-    private const int CategoriesCount = 4;
-    private const int GradesCount = 20;
+    private const int CardsCount = 100;
+    private const int CategoriesCount = 10;
+    private const int GradesCount = 0;
 
     public static void SeedDbData(AppDbContext context)
     {
