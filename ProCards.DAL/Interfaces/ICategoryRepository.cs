@@ -4,5 +4,5 @@ namespace ProCards.DAL.Interfaces;
 
 public interface ICategoryRepository: IDisposable
 {
-    Task<List<CategoryDal>> GetNineUserCategories(int firstCategoryId);
+    Task<(List<CategoryDal>, bool)> GetNineUserCategoriesAsync(int firstCategoryId);
 }

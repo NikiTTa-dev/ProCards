@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
@@ -33,42 +32,43 @@ public class CardController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult PostCard([FromBody] CardDto card)
+    public async Task<IActionResult> PostCard([FromBody] CardDto card)
     {
-        try
-        {
+        //try
+        //{
             var cardDal = _mapper.Map<CardDal>(card);
-            _cardRepository.InsertCardWithCategory(cardDal);
-            _cardRepository.Save();
+            await _cardRepository.InsertCardWithCategoryAsync(cardDal);
+            await _cardRepository.SaveAsync();
             return NoContent();
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "An error occurred creating card. {ExceptionMessage}", ex.Message);
-        }
+        // }
+        // catch (Exception ex)
+        // {
+        //     _logger.LogError(ex, "An error occurred creating card. {ExceptionMessage}", ex.Message);
+        // }
 
         return BadRequest("An error occurred creating card. Invalid card.");
     }
 
     [HttpGet]
-    public IActionResult GetCards(
+    public async Task<IActionResult> GetCards(
         [FromQuery] string name,
         [FromQuery] bool isUser,
         [FromQuery]
         [Range(1, 20)]
         int count)
     {
-        List<CardDal> card;
-        try
-        {
-            card = _cardRepository.GetCards(name, isUser, count);
-            var cardDto = _mapper.Map<CardDto>(card.FirstOrDefault());
-            return Ok(cardDto);
-        }
-        catch (Exception ex)
-        {
-            _logger.LogError(ex, "An error occurred getting card. {ExceptionMessage}", ex.Message);
-        }
+        //try
+        //{
+            var cards = await _cardRepository.GetCardsAsync(name, isUser, count);
+            List<CardDto> cardDtos = cards
+                .Select(card => _mapper.Map<CardDto>(card))
+                .ToList();
+            return Ok(cardDtos);
+        //}
+        // catch (Exception ex)
+        // {
+        //     _logger.LogError(ex, "An error occurred getting card. {ExceptionMessage}", ex.Message);
+        // }
 
         return BadRequest("No cards in this category or server error.");
     }

@@ -14,21 +14,26 @@ public class CategoryRepository : ICategoryRepository
         _context = context;
     }
 
-    public async Task<List<CategoryDal>> GetNineUserCategories(int firstCategoryId)
+    public async Task<(List<CategoryDal>,bool)> GetNineUserCategoriesAsync(int firstCategoryId)
     {
+        var isLast = false;
         var categories = _context.Categories;
         var categoriesCount = await categories.CountAsync();
-
+        
         if (categoriesCount < firstCategoryId)
-            firstCategoryId = 1;
+        {
+            firstCategoryId = 11;
+            isLast = true;
+        }
 
         if (categoriesCount - firstCategoryId + 1 < 9)
             firstCategoryId = categoriesCount - 8;
 
-        return await categories
+        return (await categories
             .Where(c => c.Id >= firstCategoryId && c.IsUserCategory == true)
             .Take(9)
-            .ToListAsync();
+            .ToListAsync(),
+            isLast);
     }
 
     private bool _disposed;

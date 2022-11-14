@@ -7,6 +7,9 @@ namespace ProCards.Web.Data.DTOs;
 
 public class CardDto : IValidatableObject
 {
+    [JsonPropertyName("id")]
+    public int? Id { get; init; }
+
     [Required]
     [JsonPropertyName("firstSide")]
     [MaxLength(ConfigurationConstants.MaxCardSideLength)]
@@ -19,7 +22,7 @@ public class CardDto : IValidatableObject
 
     [Required]
     [JsonPropertyName("cardCategory")]
-    public CategoryDto CardCategory { get; init; }
+    public CategoryDto Category { get; init; }
 
     [JsonPropertyName("grades")]
     public List<int> Grades { get; init; }
@@ -35,7 +38,8 @@ public class CardDto : IValidatableObject
                         $"{nameof(Grades)} must be 1 <= grade <= 5.",
                         new[] { nameof(Grades) });
             }
-            if(Grades.Count > 20)
+
+            if (Grades.Count > 20)
                 yield return new ValidationResult(
                     $"{nameof(Grades)} count must be lower than 20.",
                     new[] { nameof(Grades) });

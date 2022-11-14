@@ -8,6 +8,7 @@ using ProCards.DAL;
 using ProCards.DAL.Context;
 using ProCards.DAL.Interfaces;
 using ProCards.DAL.Repositories;
+using ProCards.Web;
 using ProCards.Web.Logic;
 using Serilog;
 
@@ -76,7 +77,7 @@ using (var scope = app.Services.CreateScope())
     try
     {
         var context = services.GetRequiredService<AppDbContext>();
-        context.Database.EnsureDeleted();
+        //context.Database.EnsureDeleted();
         context.Database.EnsureCreated();
         //SeedData.SeedDbData(context);
     }

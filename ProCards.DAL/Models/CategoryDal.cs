@@ -1,12 +1,15 @@
-﻿namespace ProCards.DAL.Models;
+﻿using System.Diagnostics.CodeAnalysis;
 
-public class CategoryDal: ModelBase<int>
+namespace ProCards.DAL.Models;
+
+public class CategoryDal: ModelBase
 {
+    [NotNull]
     public string? Name { get; init; }
     
     public bool IsUserCategory { get; init; }
     
-    public ICollection<CardDal>? Cards { get; init; }
+    public ICollection<CardDal>? Cards { get; set; }
     
     public DateTime? PublishedAt { get; init; }
 }

@@ -8,8 +8,8 @@ namespace ProCards.Web;
 public static class SeedData
 {
     private const int CardsCount = 100;
-    private const int CategoriesCount = 10;
-    private const int GradesCount = 0;
+    private const int CategoriesCount = 30;
+    private const int GradesCount = 10;
 
     public static void SeedDbData(AppDbContext context)
     {
@@ -30,7 +30,8 @@ public static class SeedData
                 IsUserCategory = categoryFlag,
                 PublishedAt = DateTime.UtcNow
             });
-            categoryFlag = !categoryFlag;
+            if(i >= 9)
+                categoryFlag = true;
         }
 
         context.AddRange(categories);

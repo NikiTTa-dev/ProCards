@@ -15,7 +15,14 @@ public class GradeRepository: IGradeRepository
 
     public async Task InsertGradesAsync(List<GradeDal> gradeDals)
     {
-        await _context.Grades.AddRangeAsync(gradeDals);
+        var grade = gradeDals.FirstOrDefault();
+        if (grade != null)
+        {
+            var card = await _context.Cards.FindAsync(grade.CardId);
+            if (card == null)
+                throw new KeyNotFoundException("Grades can not be added to database because of card doesn't exist.");
+            card.Grades = gradeDals;
+        }
     }
 
     public async Task SaveAsync()

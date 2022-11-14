@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Data;
+using Microsoft.EntityFrameworkCore;
 using ProCards.DAL.Context;
 using ProCards.DAL.Interfaces;
 using ProCards.DAL.Models;
@@ -14,41 +15,59 @@ public class CardRepository : ICardRepository
         _context = context;
     }
 
-    public List<CardDal> GetCards(string categoryName, bool isUserCategory, int count)
+    public async Task<List<CardDal>> GetCardsAsync(string categoryName, bool isUserCategory, int count)
     {
-        var cards = _context.Cards
+        var cards = await _context.Cards
             .Include(c => c.Category)
             .Where(c => c.Category.Name == categoryName && c.Category.IsUserCategory == isUserCategory)
             .OrderBy(r => EF.Functions.Random())
-            .ToList();
+            .ToListAsync();
         if (cards == null)
-            throw new NullReferenceException("Card with this category not found.");
+            throw new KeyNotFoundException("Card with this category not found.");
 
         return cards
-            .Take(Math.Min(cards.Count(), count))
+            .Take(Math.Min(cards.Count, count))
             .ToList();
     }
 
-    public CardDal GetCard(string categoryName, bool isUserCategory)
+    public async Task<CardDal> GetCardAsync(string categoryName, bool isUserCategory)
     {
-        var card = _context.Cards
+        var card = await _context.Cards
             .Include(c => c.Category)
-            .FirstOrDefault(c => c.Category.Name == categoryName && c.Category.IsUserCategory == isUserCategory);
+            .FirstOrDefaultAsync(c => c.Category.Name == categoryName && c.Category.IsUserCategory == isUserCategory);
         if (card == null)
-            throw new NullReferenceException("Card not found.");
+            throw new KeyNotFoundException("Card not found.");
         return card;
     }
 
-    public void InsertCardWithCategory(CardDal card)
+    public async Task InsertCardWithCategoryAsync(CardDal cardDal)
     {
-        if (card.Grades != null && card.Grades.Count > 0)
+        if (cardDal.Category.IsUserCategory == false)
+            throw new ArgumentException("You can insert only user categories.");
+
+        if (cardDal.Id != null || cardDal.Category.Id != null)
+            throw new ArgumentException("Card must have no ids when inserting to db.");
+
+        if (cardDal.Grades != null && cardDal.Grades.Count > 0)
             throw new ArgumentException("Card must have no grades when inserting to db.");
-        _context.Cards.Add(card);
+
+        var category = await _context.Categories.FirstOrDefaultAsync(cat => cat.Name == cardDal.Category.Name &&
+                                                                            cat.IsUserCategory ==
+                                                                            cardDal.Category.IsUserCategory);
+
+        if (category != null)
+            if (await _context.Cards.FirstOrDefaultAsync(card =>
+                    card.CategoryId == category.Id && card.FirstSide == cardDal.FirstSide) != null)
+                throw new DuplicateNameException("Card already exists.");
+            else
+                category.Cards = new List<CardDal> { cardDal };
+        else
+            _context.Cards.Add(cardDal);
     }
 
-    public void Save()
+    public async Task SaveAsync()
     {
-        _context.SaveChanges();
+        await _context.SaveChangesAsync();
     }
 
     private bool _disposed;

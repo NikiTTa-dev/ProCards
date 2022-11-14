@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -12,7 +13,7 @@ public class GradesLogic
 {
     private IGradeRepository _gradeRepository;
     private IMapper _mapper;
-    
+
     public GradesLogic(IGradeRepository gradeRepository, IMapper mapper)
     {
         _gradeRepository = gradeRepository;
@@ -21,17 +22,23 @@ public class GradesLogic
 
     public async Task<List<CardDto>> GetNewCardsByGrades(List<CardDto> cards)
     {
-        await _gradeRepository.InsertGradesAsync(cards
-            .SelectMany(card =>
-            {
-                var cardDal = _mapper.Map<CardDal>(card);
-                return cardDal.Grades;
-            })
-            .ToList());
-        await _gradeRepository.SaveAsync();
+        await InsertGradesToDb(cards);
+
         
-        
-        
+
         return null;
+    }
+
+    private async Task InsertGradesToDb(List<CardDto> cards)
+    {
+        foreach (var cardDto in cards)
+        {
+            var cardDal = _mapper.Map<CardDal>(cardDto);
+            if (cardDal.Grades == null || cardDal.Grades.Count == 0)
+                throw new ArgumentException("Card have no grades.");
+            await _gradeRepository.InsertGradesAsync(cardDal.Grades.ToList());
+        }
+
+        await _gradeRepository.SaveAsync();
     }
 }
