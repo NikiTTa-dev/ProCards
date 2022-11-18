@@ -94,8 +94,20 @@
                 </section>
             </form>
         </section>
+        <div class="succsess hidden">
+            <div class="succsess-content">
+                <p>Карточка успешно добавлена.</p>
+                <button id="succsess-ok" class="submit">ОК</button>
+            </div>
+        </div>
+        <div class="error hidden">
+            <div class="error-content">
+                <p style="color: red">Ошибка добавления карточки.</p>
+                <span></span>
+                <button id="error-ok" class="submit">ОК</button>
+            </div>
+        </div>
     </main>
-
     <hr>
     <footer>
         <ul class="footer-nav">
@@ -116,7 +128,8 @@
         </li>
     </template>
 
-    <script type="module" src="js/create.js"></script>
+
+    <script type="module" src="./js/create.js"></script>
 </body>
 
 </html>

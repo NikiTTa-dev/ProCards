@@ -30,14 +30,30 @@ public class CardRepository : ICardRepository
             .ToList();
     }
 
-    public async Task<CardDal> GetCardAsync(string categoryName, bool isUserCategory)
+    public async Task<CardDal> GetCardByCategoryAsync(string categoryName, bool isUserCategory)
     {
         var card = await _context.Cards
             .Include(c => c.Category)
-            .FirstOrDefaultAsync(c => c.Category.Name == categoryName && c.Category.IsUserCategory == isUserCategory);
+            .Where(c => c.Category.Name == categoryName && c.Category.IsUserCategory == isUserCategory)
+            .OrderBy(r => EF.Functions.Random())
+            .FirstOrDefaultAsync();
         if (card == null)
             throw new KeyNotFoundException("Card not found.");
         return card;
+    }
+
+    public async Task<bool> IsCardExists(string categoryName, bool isUserCategory, string cardFirstSide)
+    {
+        if (await _context.Cards
+                .Include(card => card.Category)
+                .FirstOrDefaultAsync(card =>
+                    card.Category.Name == categoryName &&
+                    card.Category.IsUserCategory == isUserCategory &&
+                    card.FirstSide == cardFirstSide)
+            != null)
+            return true;
+
+        return false;
     }
 
     public async Task InsertCardWithCategoryAsync(CardDal cardDal)

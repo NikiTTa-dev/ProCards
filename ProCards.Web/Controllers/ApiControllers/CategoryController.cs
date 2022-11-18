@@ -1,7 +1,9 @@
 ﻿using System.Threading.Tasks;
+using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using ProCards.DAL.Interfaces;
 using ProCards.Web.Filters;
+using ProCards.Web.Validators;
 
 namespace ProCards.Web.Controllers.ApiControllers;
 
@@ -16,6 +18,7 @@ public class CategoryController: ControllerBase
         var categories = await categoryRepository.GetNineUserCategoriesAsync(firstId);
         if (categories.Item2)
             HttpContext.Response.Headers["is-last"] = "true";
+        
         return Ok(categories.Item1);
     }
 }

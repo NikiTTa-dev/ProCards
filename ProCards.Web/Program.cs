@@ -1,4 +1,5 @@
 using System;
+using FluentValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -8,16 +9,15 @@ using ProCards.DAL;
 using ProCards.DAL.Context;
 using ProCards.DAL.Interfaces;
 using ProCards.DAL.Repositories;
-using ProCards.Web;
 using ProCards.Web.Logic;
 using Serilog;
 
-//TODO:
+// TODO
 // 
 // Реализовать ExceptionHandler
-// Настроить логирование на игнорирование запросов к Index, Create, Learn
-// Реализовать ответ на ошибки
-// 
+// Логика новых карточек 
+// FluentValidation
+//
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -38,6 +38,8 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddTransient<GradesLogic>();
 
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
+
+builder.Services.AddValidatorsFromAssembly(typeof(Program).Assembly);
 
 var app = builder.Build();
 

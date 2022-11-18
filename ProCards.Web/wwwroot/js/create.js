@@ -2,17 +2,23 @@ import { sendData } from './api.js';
 
 const form = document.querySelector('form');
 const cards = document.querySelector('.cards');
-const addCategoryButton = form.querySelector('.add');
-const addCategoryButtonText = addCategoryButton.querySelector('span');
-const addCategoryInput = addCategoryButton.querySelector('.add-category');
+const addCategoryBtn = form.querySelector('.add');
+const addCategoryBtnText = addCategoryBtn.querySelector('span');
+const addCategoryInput = addCategoryBtn.querySelector('.add-category');
 const bigCards = form.querySelectorAll('.big-card');
 const categoryCardTemplate = document.querySelector('#category-card').content.querySelector('li');
+const succsess = document.querySelector('.succsess');
+const succsessBtn = document.querySelector('#succsess-ok');
+const error = document.querySelector('.error');
+let errTextContent = error.querySelector('span').textContent
+const errorBtn = document.querySelector('#error-ok');
 
 const newCardData = {
     firstSide: '',
     secondSide: '',
     cardCategory: {
-        name: ''
+        name: '',
+        isUserCategory: true
     }
 };
 
@@ -26,30 +32,31 @@ function createNewCategory() {
 }
 
 function showAddCategoryInput() {
-    addCategoryButtonText.classList.add('hidden');
+    addCategoryBtnText.classList.add('hidden');
     addCategoryInput.classList.remove('hidden');
 }
 
 function hideAddCategoryInput() {
-    addCategoryButtonText.classList.remove('hidden');
+    addCategoryBtnText.classList.remove('hidden');
     addCategoryInput.classList.add('hidden');
     addCategoryInput.value = '';
 }
 
 function transformToStandartStyle() {
     addCategoryInput.classList.add('hidden');
-    addCategoryButtonText.classList.remove('hidden');
+    addCategoryBtnText.classList.remove('hidden');
     bigCards.forEach((bigCard) => {
         bigCard.querySelector('textarea').value = '';
         bigCard.querySelector('span').classList.remove('hidden');
     })
+    errTextContent = '';
 }
 
-addCategoryButton.onclick = () => showAddCategoryInput();
+addCategoryBtn.onclick = () => showAddCategoryInput();
 
 addCategoryInput.onchange = () => {
     createNewCategory();
-    hideAddCategoryInput()
+    hideAddCategoryInput();
 }
 
 bigCards.forEach((bigCard) => {
@@ -62,6 +69,25 @@ form.onsubmit = (evt) => {
     newCardData.cardCategory.name = formData.get('cardCategory');
     newCardData.firstSide = formData.get('firstSide');
     newCardData.secondSide = formData.get('secondSide');
-    sendData(newCardData);
+    let link = 'https://localhost:7141/cards';
+    sendData(link, newCardData, onSuccsesPost, onErrorPost);
     transformToStandartStyle();
 }
+
+function onSuccsesPost() {
+    succsess.classList.remove('hidden');
+}
+
+function onErrorPost(err) {
+    error.classList.remove('hidden');
+    errTextContent = error.querySelector('span').textContent = err;
+}
+
+succsessBtn.onclick = () => {
+    succsess.classList.add('hidden');
+};
+
+errorBtn.onclick = () => {
+    error.classList.add('hidden');
+};
+

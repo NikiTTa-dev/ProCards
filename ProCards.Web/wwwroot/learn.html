@@ -163,7 +163,6 @@
             <div class="deck-content">
                 <span>Нажатия на карточку <br>перевернет ее</span>
                 <button class="card big-card">
-                    <!-- <span class="standart">Лицевая сторона</span> -->
                     <div class="wrapper">
                         <div class="big-card-content">Лицевая сторона</div>
                     </div>
@@ -196,7 +195,13 @@
                 </ul>
             </div>
         </section>
-
+        <div id="error" class="error hidden">
+            <div class="error-content">
+                <p style="color: red">Не удалось получить карточки.</p>
+                <span></span>
+                <button id="error-ok" class="submit">ОК</button>
+            </div>
+        </div>
         <section class="rating hidden">
             <h3>Оцените насколько вы знали содержимое карточки</h3>
             <ul class="rating-buttons">
@@ -229,7 +234,7 @@
         </ul>
         <p class="copyright">PROCARDS ©2022 Все права защищены</p>
     </footer>
-    <script type="module" src="js/learn.js"></script>
+    <script type="module" src="./js/learn.js"></script>
 </body>
 
 </html>

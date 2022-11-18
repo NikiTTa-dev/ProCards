@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "foqtrfrNPfrFkmItWFohs5/33dFPbi2a9BFrnf4Hx64=",
+  "Hash": "kidWwuwRKh6raAS4iN9V16+kfVWEa0vZnbzB3wvHdUg=",
   "Source": "ProCards.Web",
   "BasePath": "_content/ProCards.Web",
   "Mode": "Default",
@@ -253,23 +253,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\learn.js"
-    },
-    {
-      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\js\\validationForm.js",
-      "SourceId": "ProCards.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
-      "BasePath": "_content/ProCards.Web",
-      "RelativePath": "js/validationForm.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\validationForm.js"
     },
     {
       "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\learn.html",

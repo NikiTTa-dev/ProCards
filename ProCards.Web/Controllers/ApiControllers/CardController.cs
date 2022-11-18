@@ -9,6 +9,7 @@ using ProCards.DAL.Interfaces;
 using ProCards.DAL.Models;
 using ProCards.Web.Attributes;
 using ProCards.Web.Data.DTOs;
+using ProCards.Web.Filters;
 using ProCards.Web.Logic;
 
 namespace ProCards.Web.Controllers.ApiControllers;
@@ -80,7 +81,7 @@ public class CardController : ControllerBase
         [LimitCount(1, 20)]
         List<CardDto> cardDtos)
     {
-        await logic.GetNewCardsByGrades(cardDtos);
-        return Ok();
+        var result = await logic.GetNewCardsByGrades(cardDtos);
+        return Ok(result);
     }
 }

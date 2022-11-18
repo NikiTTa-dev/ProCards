@@ -24,18 +24,6 @@
     background: linear-gradient(113.35deg, #246FCC 3.29%, #163152 95.15%);
 }
 
-.submit {
-    display: block;
-    width: 120px;
-    height: 35px;
-    margin: 50px auto 0;
-    color: white;
-    background: linear-gradient(113.1deg, #163152 4.73%, #051325 94.3%);
-    border: 0px;
-    border-radius: 10px;
-    font-size: 10px;
-}
-
 .add-category {
     width: 130px;
     padding: 0;
@@ -74,4 +62,8 @@ input[type=text] {
     color: white;
     opacity: 0.8;
     text-align: center;
+}
+
+.hidden {
+    display: none;
 }
