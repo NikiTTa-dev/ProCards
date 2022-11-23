@@ -3,28 +3,28 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="css/mainStyle.css" rel="stylesheet">
-    <link href="css/learnStyle.css" rel="stylesheet">
-    <link href="css/createStyle.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/outline-settings.css">
-    <link rel="stylesheet" href="css/outline.css"> -->
+    <link rel="shortcut icon" href="./content/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./content/favicon.ico" type="image/x-icon">
+    <link href="./css/create-style.css" rel="stylesheet">
     <title>Procards</title>
 </head>
 
 <body>
-
     <header>
-        <p class="logo">PROCARDS</p>
+        <span class="logo">PROCARDS</span>
         <nav>
             <ul class="header-nav">
-                <li><a href="index.html">ГЛАВНАЯ</a></li>
-                <li><a href="learn.html">ОБУЧЕНИЕ</a></li>
+                <li><a href=".">ГЛАВНАЯ</a></li>
+                <li><a href="/learn">ОБУЧЕНИЕ</a></li>
                 <li><a href="#" class="curent">СОЗДАТЬ КАРТОЧКИ</a></li>
             </ul>
         </nav>
+        <ul class="header-btns">
+            <li><button class="theme-switch-button" type="button"></button></li>
+            <li>
+                <a class="signin" href="#"><img src="./content/user.svg" width="24px" alt="Кабинет"></a>
+            </li>
+        </ul>
     </header>
     <hr>
 
@@ -34,6 +34,12 @@
                 <h2>Создать карточку</h2>
                 <section class="categories">
                     <h3>Создайте или выберите категорию</h3>
+
+                    <!-- <label class="add">
+                            <span>+</span>
+                            <input type="text" id="add-category" class="add-category hidden" placeholder="Категория"
+                                maxlength="52">
+                        </label> -->
                     <ul class="cards">
                         <li>
                             <label class="add">
@@ -43,27 +49,57 @@
                             </label>
                         </li>
                         <li>
-                            <label>
-                                <span>Алгебра</span>
-                                <input name="cardCategory" type="radio" value="алгебра" required>
+                            <label class="user-category">
+                                <span>Пусто</span>
+                                <input name="cardCategory" type="radio" required>
                             </label>
                         </li>
                         <li>
-                            <label>
-                                <span>Английский язык</span>
-                                <input name="cardCategory" type="radio" value="английский">
+                            <label class="user-category">
+                                <span>Пусто</span>
+                                <input name="cardCategory" type="radio">
                             </label>
                         </li>
                         <li>
-                            <label>
-                                <span>География</span>
-                                <input name="cardCategory" type="radio" value="география">
+                            <label class="user-category">
+                                <span>Пусто</span>
+                                <input name="cardCategory" type="radio">
                             </label>
                         </li>
                         <li>
-                            <label>
-                                <span>Информатика</span>
-                                <input name="cardCategory" type="radio" value="информатика">
+                            <label class="user-category">
+                                <span>Пусто</span>
+                                <input name="cardCategory" type="radio">
+                            </label>
+                        </li>
+                        <li>
+                            <label class="user-category">
+                                <span>Пусто</span>
+                                <input name="cardCategory" type="radio">
+                            </label>
+                        </li>
+                        <li>
+                            <label class="user-category">
+                                <span>Пусто</span>
+                                <input name="cardCategory" type="radio">
+                            </label>
+                        </li>
+                        <li>
+                            <label class="user-category">
+                                <span>Пусто</span>
+                                <input name="cardCategory" type="radio">
+                            </label>
+                        </li>
+                        <li>
+                            <label class="user-category">
+                                <span>Пусто</span>
+                                <input name="cardCategory" type="radio">
+                            </label>
+                        </li>
+                        <li>
+                            <label class="user-category">
+                                <span>Пусто</span>
+                                <input name="cardCategory" type="radio">
                             </label>
                         </li>
                     </ul>
@@ -76,14 +112,14 @@
                             <li class="content-item">
                                 <button type="button" class="big-card">
                                     <span>Лицевая сторона</span>
-                                    <textarea class="test" name="firstSide" rows="8" minlength="1" maxlength="270"
+                                    <textarea class="test" name="firstSide" minlength="1" maxlength="270"
                                         required></textarea>
                                 </button>
                             </li>
                             <li class="content-item">
                                 <button type="button" class="big-card">
                                     <span>Обратная сторона</span>
-                                    <textarea class="test" name="secondSide" rows="8" minlength="1" maxlength="270"
+                                    <textarea class="test" name="secondSide" minlength="1" maxlength="270"
                                         required></textarea>
                                 </button>
                             </li>
@@ -94,8 +130,20 @@
                 </section>
             </form>
         </section>
+        <div class="succsess hidden">
+            <div class="succsess-content">
+                <p>Карточка успешно добавлена.</p>
+                <button id="succsess-ok" class="submit">ОК</button>
+            </div>
+        </div>
+        <div class="error hidden">
+            <div class="error-content">
+                <p style="color: red; width: 360px">Не удалось добавить карточку.</p>
+                <span></span>
+                <button id="error-ok" class="submit">ОК</button>
+            </div>
+        </div>
     </main>
-
     <hr>
     <footer>
         <ul class="footer-nav">
@@ -116,8 +164,8 @@
         </li>
     </template>
 
+    <script src="./js/theme-switcher.js"></script>
     <script type="module" src="./js/create.js"></script>
-    <script src="./node_modules/pristinejs/dist/pristine.js"></script>
 </body>
 
 </html>

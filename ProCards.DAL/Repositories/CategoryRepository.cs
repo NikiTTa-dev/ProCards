@@ -1,4 +1,5 @@
-﻿using ProCards.DAL.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using ProCards.DAL.Context;
 using ProCards.DAL.Interfaces;
 using ProCards.DAL.Models;
 
@@ -13,35 +14,26 @@ public class CategoryRepository : ICategoryRepository
         _context = context;
     }
 
-    public IEnumerable<CategoryDal> GetNineUserCategories(int firstCategoryId)
+    public async Task<(List<CategoryDal>,bool)> GetNineUserCategoriesAsync(int firstCategoryId)
     {
+        var isLast = false;
         var categories = _context.Categories;
-        var categoriesCount = categories.Count();
-
+        var categoriesCount = await categories.CountAsync();
+        
         if (categoriesCount < firstCategoryId)
-            firstCategoryId = 1;
+        {
+            firstCategoryId = 11;
+            isLast = true;
+        }
 
         if (categoriesCount - firstCategoryId + 1 < 9)
             firstCategoryId = categoriesCount - 8;
 
-        return categories
-            .Where(c => c.Id >= firstCategoryId)
+        return (await categories
+            .Where(c => c.Id >= firstCategoryId && c.IsUserCategory == true)
             .Take(9)
-            .ToList();
-    }
-
-    public IEnumerable<CategoryDal> GetTenDefaultCategories()
-    {
-        return _context.Categories;
-    }
-
-    public CategoryDal GetCategoryById(int categoryId)
-    {
-        var category = _context.Categories
-            .FirstOrDefault(cat => cat.Id == categoryId);
-        if (category == null)
-            throw new NullReferenceException("Category not found.");
-        return category;
+            .ToListAsync(),
+            isLast);
     }
 
     private bool _disposed;

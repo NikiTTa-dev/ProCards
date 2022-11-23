@@ -1,4 +1,5 @@
 using System;
+using FluentValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -8,30 +9,40 @@ using ProCards.DAL;
 using ProCards.DAL.Context;
 using ProCards.DAL.Interfaces;
 using ProCards.DAL.Repositories;
+using ProCards.Web.Filters;
+using ProCards.Web.Logic;
 using Serilog;
 
-//TODO:
-// Навесить NotNull атрибуты на дто для базы данных
-// Реализовать ExceptionHandler
-// Настроить логирование на игнорирование запросов к Index, Create, Learn
-// Реализовать ответ на ошибки
-// Валидация данных
+// TODO
 // 
+// FluentValidation
+//
 
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Host.UseSerilog((_, config)=>config.ReadFrom.Configuration(builder.Configuration));
+builder.Host.UseSerilog((_, config)=>
+{
+    config.ReadFrom.Configuration(builder.Configuration);
+});
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllers()
+    .AddNewtonsoftJson();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-string connectionString = builder.Configuration.GetConnectionString("MySqlConnection");
+string connectionString = builder.Configuration.GetConnectionString("PostgreSqlConnection");
 builder.Services.AddDbContext(connectionString);
 
 builder.Services.AddScoped<ICardRepository, CardRepository>();
+builder.Services.AddScoped<IGradeRepository, GradeRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddTransient<GradesLogic>();
+
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
+
+builder.Services.AddValidatorsFromAssembly(typeof(Program).Assembly);
 
 var app = builder.Build();
 
@@ -47,19 +58,14 @@ app.UseStaticFiles();
 
 app.UseAuthorization();
 
+app.UseExceptionHandler("/error");
+
 // app.Use(async (HttpContext context, Func<Task> next) =>
 // {
 //     using (var scope = app.Services.CreateScope())
 //     {
-//         AppDbContext dbContext = context.RequestServices.GetRequiredService<AppDbContext>();
-//         var rep = new CategoryRepository(dbContext);
-//         // var a = rep.GetNineCategories(1);
-//         // var b = rep.GetNineCategories(10);
-//         // var c = rep.GetNineCategories(15);
-//         // var rep = new CardRepository(dbContext);
-//         // var a = rep.GetFiveCards("asdasd", true);
-//         await next.Invoke();
 //     }
+//     await next.Invoke();
 // });
 
 app.MapControllers();
@@ -71,8 +77,9 @@ using (var scope = app.Services.CreateScope())
     try
     {
         var context = services.GetRequiredService<AppDbContext>();
-        context.Database.EnsureDeleted();
+        //context.Database.EnsureDeleted();
         context.Database.EnsureCreated();
+        //SeedData.SeedDbData(context);
     }
     catch (Exception ex)
     {

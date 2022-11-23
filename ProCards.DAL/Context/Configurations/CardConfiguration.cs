@@ -8,6 +8,7 @@ public class CardConfiguration : IEntityTypeConfiguration<CardDal>
 {
     public void Configure(EntityTypeBuilder<CardDal> builder)
     {
+        
         builder.Property(p => p.FirstSide)
             .HasMaxLength(ConfigurationConstants.MaxCardSideLength)
             .IsRequired();
@@ -19,5 +20,6 @@ public class CardConfiguration : IEntityTypeConfiguration<CardDal>
             .IsRequired();
         builder.HasMany(p => p.Grades)
             .WithOne(c => c.Card);
+        builder.HasAlternateKey(p => new { p.FirstSide, p.CategoryId });
     }
 }

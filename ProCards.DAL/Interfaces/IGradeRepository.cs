@@ -4,7 +4,6 @@ namespace ProCards.DAL.Interfaces;
 
 public interface IGradeRepository: IDisposable
 {
-    GradeDal GetGradeById(int gradeId);
-    void InsertGrade(GradeDal gradeDal);
-    void Save();
+    Task InsertGradesAsync(List<GradeDal> gradeDals);
+    Task SaveAsync();
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "foqtrfrNPfrFkmItWFohs5/33dFPbi2a9BFrnf4Hx64=",
+  "Hash": "oUJ311MYf7VJzBAs0xmbBuriVc4/wUZV1SwKK00bg90=",
   "Source": "ProCards.Web",
   "BasePath": "_content/ProCards.Web",
   "Mode": "Default",
@@ -34,6 +34,23 @@
       "OriginalItemSpec": "wwwroot\\content\\arrow.svg"
     },
     {
+      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\content\\favicon.ico",
+      "SourceId": "ProCards.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
+      "BasePath": "_content/ProCards.Web",
+      "RelativePath": "content/favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\content\\favicon.ico"
+    },
+    {
       "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\content\\img.svg",
       "SourceId": "ProCards.Web",
       "SourceType": "Discovered",
@@ -49,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\content\\img.svg"
+    },
+    {
+      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\content\\moon.svg",
+      "SourceId": "ProCards.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
+      "BasePath": "_content/ProCards.Web",
+      "RelativePath": "content/moon.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\content\\moon.svg"
     },
     {
       "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\content\\pattern.png",
@@ -68,6 +102,23 @@
       "OriginalItemSpec": "wwwroot\\content\\pattern.png"
     },
     {
+      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\content\\refresh-dark.svg",
+      "SourceId": "ProCards.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
+      "BasePath": "_content/ProCards.Web",
+      "RelativePath": "content/refresh-dark.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\content\\refresh-dark.svg"
+    },
+    {
       "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\content\\refresh.svg",
       "SourceId": "ProCards.Web",
       "SourceType": "Discovered",
@@ -83,6 +134,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\content\\refresh.svg"
+    },
+    {
+      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\content\\sun-light.svg",
+      "SourceId": "ProCards.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
+      "BasePath": "_content/ProCards.Web",
+      "RelativePath": "content/sun-light.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\content\\sun-light.svg"
+    },
+    {
+      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\content\\user-light.svg",
+      "SourceId": "ProCards.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
+      "BasePath": "_content/ProCards.Web",
+      "RelativePath": "content/user-light.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\content\\user-light.svg"
+    },
+    {
+      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\content\\user.svg",
+      "SourceId": "ProCards.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
+      "BasePath": "_content/ProCards.Web",
+      "RelativePath": "content/user.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\content\\user.svg"
     },
     {
       "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\create.html",
@@ -102,12 +204,12 @@
       "OriginalItemSpec": "wwwroot\\create.html"
     },
     {
-      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\css\\createStyle.css",
+      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\css\\create-style.css",
       "SourceId": "ProCards.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
       "BasePath": "_content/ProCards.Web",
-      "RelativePath": "css/createStyle.css",
+      "RelativePath": "css/create-style.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,15 +218,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\createStyle.css"
+      "OriginalItemSpec": "wwwroot\\css\\create-style.css"
     },
     {
-      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\css\\learnStyle.css",
+      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\css\\index-style.css",
       "SourceId": "ProCards.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
       "BasePath": "_content/ProCards.Web",
-      "RelativePath": "css/learnStyle.css",
+      "RelativePath": "css/index-style.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,15 +235,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\learnStyle.css"
+      "OriginalItemSpec": "wwwroot\\css\\index-style.css"
     },
     {
-      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\css\\mainStyle.css",
+      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\css\\learn-style.css",
       "SourceId": "ProCards.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
       "BasePath": "_content/ProCards.Web",
-      "RelativePath": "css/mainStyle.css",
+      "RelativePath": "css/learn-style.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -150,41 +252,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\mainStyle.css"
-    },
-    {
-      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\css\\outline-settings.css",
-      "SourceId": "ProCards.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
-      "BasePath": "_content/ProCards.Web",
-      "RelativePath": "css/outline-settings.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\outline-settings.css"
-    },
-    {
-      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\css\\outline.css",
-      "SourceId": "ProCards.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
-      "BasePath": "_content/ProCards.Web",
-      "RelativePath": "css/outline.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\outline.css"
+      "OriginalItemSpec": "wwwroot\\css\\learn-style.css"
     },
     {
       "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\index.html",
@@ -255,12 +323,12 @@
       "OriginalItemSpec": "wwwroot\\js\\learn.js"
     },
     {
-      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\js\\validationForm.js",
+      "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\js\\theme-switcher.js",
       "SourceId": "ProCards.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\",
       "BasePath": "_content/ProCards.Web",
-      "RelativePath": "js/validationForm.js",
+      "RelativePath": "js/theme-switcher.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -269,7 +337,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\validationForm.js"
+      "OriginalItemSpec": "wwwroot\\js\\theme-switcher.js"
     },
     {
       "Identity": "C:\\Users\\nikit\\OneDrive\\Рабочий стол\\ProCards\\ProCards.Web\\wwwroot\\learn.html",

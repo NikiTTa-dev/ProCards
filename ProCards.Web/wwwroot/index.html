@@ -3,24 +3,29 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link href="css/mainStyle.css" rel="stylesheet">
+  <link href="./css/index-style.css" rel="stylesheet">
   <title>Procards</title>
+  <link rel="icon" href="./content/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./content/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
   <header>
-    <p class="logo">PROCARDS</p>
+    <span class="logo">PROCARDS</span>
     <nav>
       <ul class="header-nav">
         <li><a href="#" class="curent">ГЛАВНАЯ</a></li>
-        <li><a href="learn.html">ОБУЧЕНИЕ</a></li>
-        <li><a href="create.html">СОЗДАТЬ КАРТОЧКИ</a></li>
+        <li><a href="/learn">ОБУЧЕНИЕ</a></li>
+        <li><a href="/create">СОЗДАТЬ КАРТОЧКИ</a></li>
       </ul>
     </nav>
+    <ul class="header-btns">
+      <li><button class="theme-switch-button" type="button"></button></li>
+      <li>
+        <a class="signin" href="#"><img src="./content/user.svg" width="24px" alt="Кабинет"></a>
+      </li>
+    </ul>
   </header>
 
   <main>
@@ -33,7 +38,7 @@
     </section>
     <p class="description">
       Самый простой способ изучать, практиковать и осваивать в совершенстве любой нужный материал. Создавайте свои
-      карточки или находите готовые из более чем 10 модулей, созданных учителями и учениками. С нашим набором учебных
+      карточки или находите готовые из категорий, созданных учителями и учениками. С нашим набором учебных
       средств вы сможете пополнить словарный запас, выучить ключевые понятия по изучаемым предметам и отработать
       практические задачи перед предстоящим тестированием. Исследуйте нашу библиотеку учебных материалов по самым
       популярным предметам.
@@ -41,8 +46,8 @@
     <section class="about">
       <h2>КАК ЭТО РАБОТАЕТ?</h2>
       <div class="about-content">
-        <p class="first-paragraph">Преподаватель или же сам ученик создает карточки для интервального повторения
-          материала.</p>
+        <p class="first-paragraph">Преподаватель или же сам студент создает карточки для интервального повторения
+          содержимого.</p>
         <img src="content/arrow.svg" alt="">
         <p class="second-paragraph">Созданные карточки для запоминания отображается в разделе “ОБУЧЕНИЕ”</p>
       </div>
@@ -56,9 +61,9 @@
       <li><a href="#">УСЛОВИЯ</a></li>
       <li><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></li>
     </ul>
-    <p class="copyright">PROCARDS ©2022 Все права защищены</p>
+    <p class="copyright">PROCARDS ©2022 Все права защищены.</p>
   </footer>
-
+  <script src="./js/theme-switcher.js"></script>
 </body>
 
 </html>

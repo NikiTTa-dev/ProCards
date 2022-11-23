@@ -1,0 +1,103 @@
+@import url("./learn-style.css");
+
+.cards .add {
+    background: linear-gradient(113.1deg, #163152 4.73%, #051325 94.3%);
+}
+
+.dark .cards .add {
+    background: #F5F5F5;
+}
+
+.card {
+    background: linear-gradient(113.28deg, #5484FF 6.29%, #22409D 93.77%);
+}
+
+label {
+    display: flex;
+    width: 150px;
+    height: 100px;
+    background: linear-gradient(113.35deg, rgba(36, 111, 204, 1) 3.29%, #163152 100%);
+    border-radius: 15px;
+    color: white;
+    word-break: keep-all;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0;
+    border: 0px;
+}
+
+.card-content {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 300px 300px;
+    gap: 100px;
+    list-style: none;
+    margin: 0 0 40px 0;
+    padding: 0;
+}
+
+.big-card {
+    position: relative;
+    margin: 0;
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(113.35deg, #246FCC 3.29%, #163152 95.15%);
+}
+
+.add-category {
+    width: 130px;
+    padding: 0;
+}
+
+input[type=text] {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    border: 0px;
+    background-color: transparent;
+}
+
+.dark input[type=text] {
+    color: #212121;
+}
+
+textarea {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 260px;
+    height: 160px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* overflow: scroll; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.5px;
+    color: white;
+    border: 0px;
+    resize: none;
+    background-color: transparent;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.dark ::placeholder {
+    color: #212121;
+}
+
+.hidden {
+    display: none;
+}
+
+.dark textarea {
+    color: #212121;
+}
