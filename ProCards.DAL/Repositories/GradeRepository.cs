@@ -1,4 +1,5 @@
 ﻿using ProCards.DAL.Context;
+using ProCards.DAL.Exceptions;
 using ProCards.DAL.Interfaces;
 using ProCards.DAL.Models;
 
@@ -20,7 +21,7 @@ public class GradeRepository: IGradeRepository
         {
             var card = await _context.Cards.FindAsync(grade.CardId);
             if (card == null)
-                throw new KeyNotFoundException("Grades can not be added to database because of card doesn't exist.");
+                throw new CardNotFoundException("Grades can not be added to database because of card doesn't exist.");
             card.Grades = gradeDals;
         }
     }

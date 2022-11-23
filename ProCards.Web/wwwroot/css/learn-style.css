@@ -1,3 +1,5 @@
+@import url("./index-style.css");
+
 h2 {
     font-size: 20px;
     text-decoration: underline;
@@ -8,6 +10,10 @@ h2 {
     padding: 0;
     padding-top: 20px;
     margin: 0 0 50px 84px;
+}
+
+.dark h2 {
+    text-decoration-color: #01f9ed;
 }
 
 h3 {
@@ -30,10 +36,6 @@ h3 {
     padding: 0;
     margin: 0;
     gap: 30px
-}
-
-.cards li:nth-child(2n)>button {
-    background: linear-gradient(113.28deg, #5484FF 6.29%, #22409D 93.77%);
 }
 
 .cards label,
@@ -66,10 +68,6 @@ input[type=radio] {
     display: none;
 }
 
-label:has(input[type=radio]:checked) {
-    background: linear-gradient(113.28deg, #3ECDAB 6.29%, #07DF91 93.77%);
-}
-
 .user-cards label,
 .refresh-button {
     background: linear-gradient(113.1deg, #163152 4.73%, #051325 94.3%);
@@ -80,17 +78,6 @@ label {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 600;
-}
-
-button:hover,
-label:hover {
-    opacity: 0.7;
-    cursor: pointer;
-}
-
-button:active,
-label:active {
-    opacity: 0.5;
 }
 
 .deck {
@@ -127,10 +114,10 @@ label:active {
     max-width: 260px;
     max-height: 160px;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 17.5px;
     text-align: center;
     word-wrap: break-word;
-    overflow: hidden;
+    z-index: 100px;
 }
 
 .score {
@@ -178,24 +165,48 @@ label:active {
     color: white;
 }
 
+.dark .rating-button {
+    color: #212121;
+}
+
 .worst {
     background: linear-gradient(113.1deg, #163152 4.73%, #051325 95%);
+}
+
+.dark .worst {
+    background: #F5F5F5;
 }
 
 .bad {
     background: linear-gradient(113.35deg, #246FCC 3.29%, #163152 95.15%);
 }
 
+.dark .bad {
+    background: linear-gradient(90deg, #bdfffe, #91cbf8);
+}
+
 .normal {
     background: linear-gradient(113.28deg, #5484FF 6.29%, #22409D 93.77%);
+}
+
+.dark .normal {
+    background: linear-gradient(90deg, #48aadb, #66c8db);
 }
 
 .good {
     background: linear-gradient(219.99deg, #3ECDAB 22.89%, #28CFDA 80.33%);
 }
 
+.dark .good {
+    background: linear-gradient(to right top, #4cffd5, #38fce2, #28f9ed, #25f6f7, #30f2ff);
+}
+
 .well {
     background: linear-gradient(47.45deg, #00C6BD 20.48%, #07DF91 79.09%);
+}
+
+.dark .well {
+    background: linear-gradient(to right top, #00ebe0, #29eed9, #40f1d2, #53f4ca, #65f6c2);
 }
 
 .succsess,
@@ -236,6 +247,46 @@ label:active {
     border: 0px;
     border-radius: 10px;
     font-size: 10px;
+}
+
+.dark .succsess-content,
+.dark .error-content {
+    background-color: #212121;
+    color: white;
+}
+
+.dark .cards label {
+    background: linear-gradient(90deg, #bdfffe, #91cbf8);
+    color: #212121;
+}
+
+.dark .cards li:nth-child(2n)>label {
+    background: linear-gradient(90deg, #48aadb, #66c8db);
+}
+
+.dark .user-card,
+.dark .refresh-button {
+    background: #F5F5F5;
+    color: #212121;
+}
+
+.dark .refresh-button img {
+    content: url("../content/refresh-dark.svg");
+}
+
+.dark .big-card {
+    background: linear-gradient(90deg, #bdfffe, #91cbf8);
+    color: #212121;
+}
+
+.dark .submit {
+    background: white;
+    color: #212121;
+}
+
+label:has(input[type=radio]:checked),
+.dark label:has(input[type=radio]:checked) {
+    background: linear-gradient(113.28deg, #3ECDAB 6.29%, #07DF91 93.77%);
 }
 
 .hidden,

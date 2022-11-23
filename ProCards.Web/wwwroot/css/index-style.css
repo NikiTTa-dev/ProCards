@@ -1,17 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 body {
   margin: 0;
   font-size: 16px;
   color: #163152;
-  background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   width: 1170px;
   margin: 0 auto;
+  transition: all .3s ease;
 }
 
 header {
   display: flex;
   height: 100px;
   align-items: center;
+  justify-content: space-between;
 }
 
 hr {
@@ -21,7 +24,6 @@ hr {
 }
 
 nav {
-  margin: 0 auto;
   font-size: 14px;
 }
 
@@ -41,9 +43,61 @@ nav {
   margin: 0;
 }
 
+.header-btns {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-btns li {
+  margin-right: 10px;
+}
+
+.header-btns li:last-child {
+  margin-right: 0;
+}
+
+.theme-switch-button {
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url("../content/moon.svg");
+  border: 1px solid #00c6bd;
+  border-radius: 50%;
+}
+
+.theme-switch-button.selected,
+.signin.selected {
+  background-color: #00c6bd;
+}
+
+.signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #00c6bd;
+  border-radius: 50%;
+}
+
+.signin:hover {
+  opacity: 0.5;
+}
+
+.signin:active {
+  opacity: 0.3;
+}
+
 a {
   text-decoration: none;
-  color: #163152;
+  color: inherit;
 }
 
 a:hover {
@@ -54,8 +108,27 @@ a:active {
   color: rgba(22, 49, 82, 0.3);
 }
 
+button:hover,
+label:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+button:active,
+label:active {
+  opacity: 0.5;
+}
+
 a.curent {
   font-weight: bold;
+}
+
+.dark a:hover {
+  color: rgb(107, 109, 110);
+}
+
+.dark a:active {
+  color: rgb(155, 157, 159);
 }
 
 .logo {
@@ -151,4 +224,9 @@ footer {
 
 .footer-nav li:last-child {
   margin-right: 0;
+}
+
+.dark {
+  background-color: #212121;
+  color: #F5F5F5;
 }

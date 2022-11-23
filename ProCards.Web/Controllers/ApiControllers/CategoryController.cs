@@ -1,9 +1,7 @@
 ﻿using System.Threading.Tasks;
-using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using ProCards.DAL.Interfaces;
 using ProCards.Web.Filters;
-using ProCards.Web.Validators;
 
 namespace ProCards.Web.Controllers.ApiControllers;
 

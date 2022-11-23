@@ -1,7 +1,4 @@
-let isLast = false;
-
-
-function getCardsFromServer(link, onSucsess, onError) {
+function getCardsFromServer(link, onSuccsess, onError) {
     fetch(link)
         .then(response => {
             if (response.ok) {
@@ -9,37 +6,33 @@ function getCardsFromServer(link, onSucsess, onError) {
             }
             throw new Error(`${response.status} ${response.statusText}`);
         })
-        .then(data => {
-            onSucsess(data);
-        })
-        .catch(err => {
-            onError(err);
-        });
+        .then(data => onSuccsess(data))
+        .catch(err => onError(err));
 }
 
-function getCategoriesFromServer(link, onSucsess, onError) {
+function getCategoriesFromServer(link, onSuccsess, onError) {
+    let isLast = false;
+
     fetch(link)
         .then(response => {
             if (response.ok) {
-                console.log(typeof(isLast));
-                if (response.headers.get('is-last') == "true")
+                if (response.headers.get("is-last") === 'true') {
                     isLast = true;
-                    
+                }
                 return response.json();
-                //response.headers.get('is-last')
             }
             throw new Error(`${response.status} ${response.statusText}`);
         })
         .then((data) => {
-            onSucsess(data, isLast);
+            onSuccsess(data, isLast);
             isLast = false;
         })
-        .catch(err => {
-            onError(err);
-        });
+        .catch(err => onError(err));
 }
 
-function sendData(link, newCardData, onSucsess, onError) {
+function sendData(link, newCardData, onSuccsess, onError) {
+    let isFail = false;
+
     fetch(
         link,
         {
@@ -49,17 +42,23 @@ function sendData(link, newCardData, onSucsess, onError) {
         })
         .then(response => {
             if (response.ok) {
-                return response.json();
+                if (response.headers.get("content-length"))
+                    return response.json();
+                else return null;
             } else {
-                throw new Error(`${response.status} ${response.statusText}`);
+                isFail = true;
+                return response.text();
             }
         })
-        .then(data=>{
-            onSucsess(data);
+        .then(data => {
+            if (isFail) {
+                throw new Error(`${data}`);
+            }
+            else {
+                onSuccsess(data);
+            }
         })
-        .catch(err => {
-            onError(err);
-        });
+        .catch(err => onError(err));
 }
 
 export { getCardsFromServer, getCategoriesFromServer, sendData };

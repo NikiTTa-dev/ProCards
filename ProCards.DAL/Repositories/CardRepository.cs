@@ -1,6 +1,6 @@
-﻿using System.Data;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using ProCards.DAL.Context;
+using ProCards.DAL.Exceptions;
 using ProCards.DAL.Interfaces;
 using ProCards.DAL.Models;
 
@@ -22,8 +22,8 @@ public class CardRepository : ICardRepository
             .Where(c => c.Category.Name == categoryName && c.Category.IsUserCategory == isUserCategory)
             .OrderBy(r => EF.Functions.Random())
             .ToListAsync();
-        if (cards == null)
-            throw new KeyNotFoundException("Card with this category not found.");
+        if (cards.Count == 0)
+            throw new CardNotFoundException("Card with this category not found.");
 
         return cards
             .Take(Math.Min(cards.Count, count))
@@ -38,7 +38,7 @@ public class CardRepository : ICardRepository
             .OrderBy(r => EF.Functions.Random())
             .FirstOrDefaultAsync();
         if (card == null)
-            throw new KeyNotFoundException("Card not found.");
+            throw new CardNotFoundException("Card not found.");
         return card;
     }
 
@@ -74,7 +74,7 @@ public class CardRepository : ICardRepository
         if (category != null)
             if (await _context.Cards.FirstOrDefaultAsync(card =>
                     card.CategoryId == category.Id && card.FirstSide == cardDal.FirstSide) != null)
-                throw new DuplicateNameException("Card already exists.");
+                throw new CardAlreadyExistsException("Card already exists.");
             else
                 category.Cards = new List<CardDal> { cardDal };
         else

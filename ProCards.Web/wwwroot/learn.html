@@ -3,26 +3,28 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="css/mainStyle.css" rel="stylesheet">
-    <link href="css/learnStyle.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/outline-settings.css">
-    <link rel="stylesheet" href="css/outline.css"> -->
+    <link rel="shortcut icon" href="./content/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./content/favicon.ico" type="image/x-icon">
+    <link href="./css/learn-style.css" rel="stylesheet">
     <title>Procards</title>
 </head>
 
 <body>
     <header>
-        <p class="logo">PROCARDS</p>
+        <span class="logo">PROCARDS</span>
         <nav>
             <ul class="header-nav">
-                <li><a href="index.html">ГЛАВНАЯ</a></li>
+                <li><a href=".">ГЛАВНАЯ</a></li>
                 <li><a href="#" class="curent">ОБУЧЕНИЕ</a></li>
-                <li><a href="create.html">СОЗДАТЬ КАРТОЧКИ</a></li>
+                <li><a href="/create">СОЗДАТЬ КАРТОЧКИ</a></li>
             </ul>
         </nav>
+        <ul class="header-btns">
+            <li><button class="theme-switch-button" type="button"></button></li>
+            <li>
+                <a class="signin" href="#"><img src="./content/user.svg" width="24px" alt="Кабинет"></a>
+            </li>
+        </ul>
     </header>
     <hr>
     <main>
@@ -151,15 +153,16 @@
                         </label>
                     </li>
                     <li>
-                        <button type="button" class="refresh-button"><img src="./content/refresh.svg" alt="refresh"
-                                width="40" style="transform: rotate(-120deg);"></button>
+                        <button type="button" class="refresh-button">
+                            <img src="./content/refresh.svg" alt="refresh" width="40">
+                        </button>
                     </li>
                 </ul>
             </section>
         </form>
 
         <section class="deck">
-            <h2>Колода для изучения</h2>
+            <h2>Колода для обучения</h2>
             <div class="deck-content">
                 <span>Нажатия на карточку <br>перевернет ее</span>
                 <button class="card big-card">
@@ -195,9 +198,9 @@
                 </ul>
             </div>
         </section>
-        <div id="error" class="error hidden">
+        <div class="error hidden">
             <div class="error-content">
-                <p style="color: red">Не удалось получить карточки.</p>
+                <p style="color: red; width: 360px">Не удалось получить категории пользователей.</p>
                 <span></span>
                 <button id="error-ok" class="submit">ОК</button>
             </div>
@@ -234,6 +237,7 @@
         </ul>
         <p class="copyright">PROCARDS ©2022 Все права защищены</p>
     </footer>
+    <script src="./js/theme-switcher.js"></script>
     <script type="module" src="./js/learn.js"></script>
 </body>
 

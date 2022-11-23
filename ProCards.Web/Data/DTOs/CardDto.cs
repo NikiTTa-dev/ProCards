@@ -1,30 +1,30 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 using ProCards.DAL;
 
 namespace ProCards.Web.Data.DTOs;
 
 public class CardDto : IValidatableObject
 {
-    [JsonPropertyName("id")]
+    [JsonProperty(PropertyName ="id")]
     public int? Id { get; init; }
 
     [Required]
-    [JsonPropertyName("firstSide")]
+    [JsonProperty(PropertyName ="firstSide")]
     [MaxLength(ConfigurationConstants.MaxCardSideLength)]
     public string FirstSide { get; init; }
 
     [Required]
-    [JsonPropertyName("secondSide")]
+    [JsonProperty(PropertyName ="secondSide")]
     [MaxLength(ConfigurationConstants.MaxCardSideLength)]
     public string SecondSide { get; init; }
 
     [Required]
-    [JsonPropertyName("cardCategory")]
+    [JsonProperty(PropertyName ="cardCategory")]
     public CategoryDto Category { get; init; }
 
-    [JsonPropertyName("grades")]
+    [JsonProperty(PropertyName ="grades")]
     public List<int> Grades { get; init; }
 
     public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)

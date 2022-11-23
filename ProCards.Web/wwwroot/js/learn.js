@@ -1,4 +1,4 @@
-import {getCardsFromServer, getCategoriesFromServer, sendData} from './api.js';
+import { getCardsFromServer, getCategoriesFromServer, sendData } from './api.js';
 // const cardsFromServer = [
 //     { firstSide: '1(1)', secondSide: '1(2)', cardCategory: { name: 'алгебра' } },
 //     { firstSide: '2(1)', secondSide: '2(2)', cardCategory: { name: 'алгебра' } },
@@ -26,12 +26,14 @@ import {getCardsFromServer, getCategoriesFromServer, sendData} from './api.js';
 const userCards = document.querySelectorAll('.user-card');
 const refreshBtn = document.querySelector('.refresh-button');
 const bigCard = document.querySelector('.big-card');
+const bigCardContent = bigCard.querySelector('.big-card-content');
 let rating = document.querySelector('.rating');
-const ratingButtons = rating.querySelector('.rating-buttons');
-const form = document.querySelector('form');
+const ratingBtns = rating.querySelector('.rating-buttons');
+const userScores = document.querySelector('.score').querySelectorAll('span');
+const categoriesSelection = document.querySelector('form');
 const scoreList = document.querySelector('.score');
 const err = document.querySelector('.error');
-let errText = err.querySelector('span');
+const errText = err.querySelector('span');
 const errBtn = document.querySelector('#error-ok');
 let currentCards = [];
 let currentCard = null;
@@ -40,25 +42,27 @@ let firstPartCards = [];
 let secondPartCards = [];
 let isFirstPartCards = true;
 let passedCards = [];
+let isEnoughCards = false;
 
 function showNextCard() {
     currentCard = currentCards.shift();
-    bigCard.querySelector('.big-card-content').textContent = currentCard.firstSide;
+    bigCardContent.textContent = currentCard.firstSide;
 }
 
 function reverseCard() {
-    bigCard.querySelector('.big-card-content').textContent = currentCard.secondSide;
+    bigCardContent.textContent = currentCard.secondSide;
+    rating.classList.remove('hidden');
 }
 
 function changeUserCategoriesContent(data) {
-    for (let i = 0; i < data.length; i++) {
+    data.forEach((category, i) => {
         const userCard = userCards[i];
-        userCard.querySelector('span').textContent = data[i].name;
-        userCard.querySelector('input').value = data[i].name;
-    }
+        userCard.querySelector('span').textContent = category.name;
+        userCard.querySelector('input').value = category.name.toLowerCase();
+    })
 }
 
-function getUsersCategories(data, isLast) {
+function setUsersCategories(data, isLast) {
     changeUserCategoriesContent(data);
     currentFirstUserCategoryId += data.length;
     if (isLast) {
@@ -66,12 +70,16 @@ function getUsersCategories(data, isLast) {
     }
 }
 
-function getCards(data) {
-    const length = data.length / 2;
-    data.forEach(card => card.grades = [])
-    firstPartCards = data.slice(0, length);
-    secondPartCards = data.slice(length);
-    currentCards = firstPartCards;
+function setCards(data) {
+    isEnoughCards = data.length > 9;
+    if (!isEnoughCards) {
+        currentCards = data;
+    } else {
+        const length = data.length / 2;
+        firstPartCards = data.slice(0, length);
+        secondPartCards = data.slice(length);
+        currentCards = firstPartCards;
+    }
     showNextCard();
 }
 
@@ -80,12 +88,14 @@ function onErrorGet(error) {
     errText.textContent = error;
 }
 
+function increaseUserScore(evt) {
+    const currentScore = scoreList.querySelector(`.${evt.target.classList[1]}-value`);
+    currentScore.textContent = Number(currentScore.textContent) + 1;
+    rating.classList.add('hidden');
+}
 
-function increaseScore(evt) {
-    const statusClass = evt.target.classList[1];
-    const currentScore = scoreList.querySelector(`.${statusClass}-value`);
-    const newValue = Number(currentScore.textContent) + 1;
-    currentScore.textContent = newValue;
+function clearUserScores() {
+    userScores.forEach(score => score.textContent = 0)
 }
 
 function addCardToPassedCards(evt) {
@@ -93,8 +103,7 @@ function addCardToPassedCards(evt) {
     passedCards.push(currentCard);
 }
 
-function getNewCards(data) {
-    //Is current cards link to current part of cards?
+function setNewCards(data) {
     if (isFirstPartCards) {
         firstPartCards = data;
         isFirstPartCards = false;
@@ -102,10 +111,6 @@ function getNewCards(data) {
         secondPartCards = data;
         isFirstPartCards = true;
     }
-    // if (isFirstPartCards)
-    //     firstPartCards = data;
-    // else
-    //     secondPartCards = data;
 }
 
 function closeErrorPopup() {
@@ -113,57 +118,50 @@ function closeErrorPopup() {
     errText.textContent = '';
 }
 
-form.onchange = (evt) => {
+function doIntervalRepeatAlgorithm(evt) {
+    if (isEnoughCards) {
+        addCardToPassedCards(evt);
+        if (!currentCards.length) {
+            if (isFirstPartCards) {
+                currentCards = secondPartCards;
+            } else {
+                currentCards = firstPartCards;
+            }
+            sendData('https://localhost:7141/cards/new', passedCards, setNewCards, onErrorGet);
+            passedCards = [];
+        }
+    } else {
+        currentCards.push(currentCard);
+    }
+}
+
+getCategoriesFromServer(`https://localhost:7141/categories?firstid=${currentFirstUserCategoryId}`,
+    setUsersCategories, onErrorGet);
+// get users categories without server (for testing)
+// getUsersCategories(usersCategotiesFromServer);
+
+categoriesSelection.onchange = (evt) => {
     if (evt.target.matches('input[type="radio"]')) {
-        // Get cards from server
-        const link = `https://localhost:7141/cards?name=${evt.target.value}&isuser=${evt.target.closest('.user-card') ? true : false}&count=10`;
-        getCardsFromServer(link, getCards, onErrorGet);
+        clearUserScores();
+        getCardsFromServer(`https://localhost:7141/cards?name=${evt.target.value}&isuser=${evt.target.closest('.user-card')
+            ? true : false}&count=10`, setCards, onErrorGet);
 
         //Get cards without server (for testing)
         // getCards(cardsFromServer);
     }
 };
 
-refreshBtn.onclick = () => {
-    //Get other users categories from server (always 9 pieces)
-    getCategoriesFromServer(`https://localhost:7141/categories?firstid=${currentFirstUserCategoryId}`, getUsersCategories, onErrorGet);
-    // Get other(same) users categories without server (for testing)
-    // getUsersCategories(usersCategotiesFromServer);
-};
+refreshBtn.onclick = () => getCategoriesFromServer(`https://localhost:7141/categories?firstid=${currentFirstUserCategoryId}`,
+    setUsersCategories, onErrorGet);
+// Get other(same) users categories without server (for testing)
+// getUsersCategories(usersCategotiesFromServer);
 
-bigCard.onclick = () => {
-    reverseCard();
-    rating.classList.remove('hidden');
-};
+bigCard.onclick = reverseCard;
 
-ratingButtons.onclick = (evt) => {
-    increaseScore(evt);
-    addCardToPassedCards(evt);
-    rating.classList.add('hidden');
-
-    console.log(`${firstPartCards.toString()} ${secondPartCards.toString()} ${passedCards.toString()}`)
-    
-    if (!currentCards.length) {
-        let link = 'https://localhost:7141/cards/new';
-        // Send passed cards and get new cards from server by algoritm
-        if (isFirstPartCards) {
-            currentCards = secondPartCards;
-        } else {
-            currentCards = firstPartCards;
-        }
-        sendData(link, passedCards, getNewCards, onErrorGet);
-        passedCards = [];
-        //Change part of cards 
-        
-    }
-
+ratingBtns.onclick = (evt) => {
+    increaseUserScore(evt);
+    doIntervalRepeatAlgorithm(evt);
     showNextCard();
 };
 
-errBtn.onclick = () => {
-    closeErrorPopup();
-}
-
-getCategoriesFromServer(`https://localhost:7141/categories?firstid=${currentFirstUserCategoryId}`, getUsersCategories, onErrorGet);
-// get users categories without server (for testing)
-// getUsersCategories(usersCategotiesFromServer);
+errBtn.onclick = closeErrorPopup;

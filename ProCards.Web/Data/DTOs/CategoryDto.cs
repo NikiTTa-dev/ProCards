@@ -1,20 +1,20 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 using ProCards.DAL;
 
 namespace ProCards.Web.Data.DTOs;
 
 public class CategoryDto
 {
-    [JsonPropertyName("id")]
+    [JsonProperty(PropertyName ="id")]
     public int? Id { get; init; }
 
     [Required]
-    [JsonPropertyName("name")]
+    [JsonProperty(PropertyName ="name")]
     [MaxLength(ConfigurationConstants.MaxCategoryNameLength)]
     public string Name { get; init; }
 
     [Required]
-    [JsonPropertyName("isUserCategory")]
+    [JsonProperty(PropertyName ="isUserCategory")]
     public bool? IsUserCategory { get; init; }
 }

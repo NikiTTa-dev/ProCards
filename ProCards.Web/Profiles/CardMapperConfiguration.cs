@@ -21,7 +21,7 @@ public class CardMapperConfiguration : Profile
                 opt =>
                 {
                     opt.AllowNull();
-                    opt.MapFrom((s, d) => s.Grades?.Select(grade => new GradeDal
+                    opt.MapFrom((s, _) => s.Grades?.Select(grade => new GradeDal
                         {
                             CardId = s.Id,
                             GradeNumber = grade,

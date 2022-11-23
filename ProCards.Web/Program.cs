@@ -9,22 +9,25 @@ using ProCards.DAL;
 using ProCards.DAL.Context;
 using ProCards.DAL.Interfaces;
 using ProCards.DAL.Repositories;
+using ProCards.Web.Filters;
 using ProCards.Web.Logic;
 using Serilog;
 
 // TODO
 // 
-// Реализовать ExceptionHandler
-// Логика новых карточек 
 // FluentValidation
 //
 
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Host.UseSerilog((_, config)=>config.ReadFrom.Configuration(builder.Configuration));
+builder.Host.UseSerilog((_, config)=>
+{
+    config.ReadFrom.Configuration(builder.Configuration);
+});
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddNewtonsoftJson();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -55,19 +58,14 @@ app.UseStaticFiles();
 
 app.UseAuthorization();
 
+app.UseExceptionHandler("/error");
+
 // app.Use(async (HttpContext context, Func<Task> next) =>
 // {
 //     using (var scope = app.Services.CreateScope())
 //     {
-//         AppDbContext dbContext = context.RequestServices.GetRequiredService<AppDbContext>();
-//         var rep = new CategoryRepository(dbContext);
-//         // var a = rep.GetNineCategories(1);
-//         // var b = rep.GetNineCategories(10);
-//         // var c = rep.GetNineCategories(15);
-//         // var rep = new CardRepository(dbContext);
-//         // var a = rep.GetFiveCards("asdasd", true);
-//         await next.Invoke();
 //     }
+//     await next.Invoke();
 // });
 
 app.MapControllers();

@@ -14,7 +14,7 @@ public class CardValidator : AbstractValidator<CardDto>
             RuleFor(c => c.Id).Null();
             RuleFor(c => c.FirstSide).NotNull();
             RuleFor(c => c.SecondSide).NotNull();
-            RuleFor(c => c.Category).SetValidator(new CategoryValidator(), "PostCard");
+            RuleFor(c => c.Category).SetValidator(new CategoryValidator(), "PostCard").NotNull();
             RuleFor(c => new { c.Category, c.FirstSide }).MustAsync(async (card, _) =>
                 await cardRepository.IsCardExists(card.Category.Name,
                     card.Category.IsUserCategory ?? false,
