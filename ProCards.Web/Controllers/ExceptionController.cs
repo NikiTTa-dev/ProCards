@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Diagnostics;
+﻿using System.Linq;
+using FluentValidation;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using ProCards.DAL.Exceptions;
+using ProCards.Web.Logic;
 
 namespace ProCards.Web.Controllers;
 
@@ -15,11 +17,9 @@ public class ErrorsController : ControllerBase
             .Get<IExceptionHandlerPathFeature>()
             ?.Error;
         
-        if (error is CardNotFoundException)
-            return new NotFoundObjectResult(error.Message);
-        if (error is CardAlreadyExistsException)
-            return new BadRequestObjectResult(error.Message);
+        if (error is ValidationException er)
+            return new BadRequestObjectResult(
+                ConcatList.ConcatListOfString(er.Errors.Select(e => e.ErrorMessage).ToList()));
         return new BadRequestObjectResult("Unhandled error was occured!");
-        
     }
 }

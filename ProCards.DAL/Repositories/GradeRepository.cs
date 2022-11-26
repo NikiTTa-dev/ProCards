@@ -5,32 +5,26 @@ using ProCards.DAL.Models;
 
 namespace ProCards.DAL.Repositories;
 
-public class GradeRepository: IGradeRepository
+public class GradeRepository : IGradeRepository
 {
     private readonly AppDbContext _context;
-    
+
     public GradeRepository(AppDbContext context)
     {
         _context = context;
     }
 
-    public async Task InsertGradesAsync(List<GradeDal> gradeDals)
+    public async Task InsertGradeAsync(GradeDal gradeDal)
     {
-        var grade = gradeDals.FirstOrDefault();
-        if (grade != null)
-        {
-            var card = await _context.Cards.FindAsync(grade.CardId);
-            if (card == null)
-                throw new CardNotFoundException("Grades can not be added to database because of card doesn't exist.");
-            card.Grades = gradeDals;
-        }
+        var card = await _context.Cards.FindAsync(gradeDal.CardId);
+        card!.Grades = new List<GradeDal> { gradeDal };
     }
 
     public async Task SaveAsync()
     {
         await _context.SaveChangesAsync();
     }
-    
+
     private bool _disposed;
 
     protected virtual void Dispose(bool disposing)

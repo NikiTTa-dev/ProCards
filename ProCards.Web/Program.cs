@@ -9,7 +9,6 @@ using ProCards.DAL;
 using ProCards.DAL.Context;
 using ProCards.DAL.Interfaces;
 using ProCards.DAL.Repositories;
-using ProCards.Web.Filters;
 using ProCards.Web.Logic;
 using Serilog;
 

@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.DependencyInjection;
@@ -8,20 +9,22 @@ using ProCards.Web.Validators;
 
 namespace ProCards.Web.Filters;
 
-public class PostedCardValidationActionFilterAttribute : ActionFilterAttribute
+public class GetNewCardsValidationActionAttribute: ActionFilterAttribute
 {
     public override async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
     {
-        var cardDto = (CardDto)context.ActionArguments["card"];
+        var cardDto = (List<CardDto>)context.ActionArguments["cardDtos"];
         var validator = new CardValidator(
             context.HttpContext.RequestServices.GetRequiredService<ICardRepository>());
-        await validator.ValidateAsync(cardDto, options =>
+        foreach (var card in cardDto)
         {
-            options.ThrowOnFailures();
-            options.IncludeRuleSets("PostCard");
-        });
-
-
+            await validator.ValidateAsync(card, options =>
+            {
+                options.ThrowOnFailures();
+                options.IncludeRuleSets("GetCard");
+            }); 
+        }
+        
         await next.Invoke();
     }
 }

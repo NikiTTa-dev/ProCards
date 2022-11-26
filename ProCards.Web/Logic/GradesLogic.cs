@@ -58,9 +58,7 @@ public class GradesLogic
         foreach (var cardDto in cards)
         {
             var cardDal = _mapper.Map<CardDal>(cardDto);
-            if (cardDal.Grades == null || cardDal.Grades.Count == 0)
-                throw new ArgumentException("Card have no grades.");
-            await _gradeRepository.InsertGradesAsync(cardDal.Grades.ToList());
+            await _gradeRepository.InsertGradeAsync(cardDal.Grades!.Last());
         }
 
         await _gradeRepository.SaveAsync();

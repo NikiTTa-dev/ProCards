@@ -11,6 +11,20 @@ public static class SeedData
     private const int CategoriesCount = 30;
     private const int GradesCount = 10;
 
+    private static List<string> _categories = new List<string>
+    {
+        "алгебра",
+        "английский",
+        "география",
+        "информатика",
+        "русский",
+        "физика",
+        "история",
+        "биология",
+        "химия",
+        "обж"
+    };
+
     public static void SeedDbData(AppDbContext context)
     {
         var categories = SeedCategories(context);
@@ -26,11 +40,11 @@ public static class SeedData
         {
             categories.Add(new CategoryDal
             {
-                Name = i + 1 + "cat",
+                Name = categoryFlag ? i + 1 + "cat" : _categories[i],
                 IsUserCategory = categoryFlag,
                 PublishedAt = DateTime.UtcNow
             });
-            if(i >= 9)
+            if (i >= 9)
                 categoryFlag = true;
         }
 
@@ -44,17 +58,18 @@ public static class SeedData
     {
         List<CardDal> cards = new List<CardDal>();
         var rnd = new Random();
-        for (int i = 0; i < CardsCount; i++)
+        for (int i = 0; i < categories.Count; i++)
         {
-            cards.Add(new CardDal
-            {
-                Category = categories[rnd.Next(0, CategoriesCount)],
-                FirstSide = i + 1 + "card1",
-                SecondSide = i + 1 + "card2",
-                PublishedAt = DateTime.UtcNow
-            });
+            for (int j = 0; j < rnd.Next(3, 20); j++)
+                cards.Add(new CardDal
+                {
+                    Category = categories[i],
+                    FirstSide = $"{categories[i].Name}" + (j + 1) + "card1",
+                    SecondSide = $"{categories[i].Name}" + (j + 1) + "card2",
+                    PublishedAt = DateTime.UtcNow
+                });
         }
-        
+
         context.AddRange(cards);
         context.SaveChanges();
 
@@ -74,7 +89,7 @@ public static class SeedData
                 PublishedAt = DateTime.UtcNow
             });
         }
-        
+
         context.AddRange(grades);
         context.SaveChanges();
     }

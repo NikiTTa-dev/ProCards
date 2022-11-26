@@ -6,8 +6,8 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using ProCards.DAL.Interfaces;
 using ProCards.DAL.Models;
-using ProCards.Web.Attributes;
 using ProCards.Web.Data.DTOs;
+using ProCards.Web.Filters;
 using ProCards.Web.Logic;
 
 namespace ProCards.Web.Controllers.ApiControllers;
@@ -28,6 +28,7 @@ public class CardController : ControllerBase
     }
 
     [HttpPost]
+    [PostedCardValidationActionFilter]
     public async Task<IActionResult> PostCard([FromBody] CardDto card)
     {
         var cardDal = _mapper.Map<CardDal>(card);
@@ -50,9 +51,10 @@ public class CardController : ControllerBase
     }
 
     [HttpPost("new")]
+    [GetNewCardsValidationAction]
     public async Task<IActionResult> GetNewCardCollectionAsync(
         [FromServices] GradesLogic logic,
-        [FromBody] [LimitCount(1, 20)] List<CardDto> cardDtos)
+        [FromBody] List<CardDto> cardDtos)
     {
         var result = await logic.GetNewCardsByGrades(cardDtos);
         return Ok(result);

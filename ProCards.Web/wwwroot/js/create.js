@@ -16,7 +16,7 @@ const errorBtn = document.querySelector('#error-ok');
 const newCardData = {
     firstSide: '',
     secondSide: '',
-    cardCategory: {
+    category: {
         name: '',
         isUserCategory: true
     }
@@ -85,7 +85,7 @@ form.onkeydown = onFormIgnoreSubmitOnEnter;
 form.onsubmit = evt => {
     evt.preventDefault();
     const formData = new FormData(form);
-    newCardData.cardCategory.name = formData.get('cardCategory');
+    newCardData.category.name = formData.get('cardCategory');
     newCardData.firstSide = formData.get('firstSide');
     newCardData.secondSide = formData.get('secondSide');
     sendData('https://localhost:7141/cards', newCardData, showSuccsessPopup, showErrorOnSend);

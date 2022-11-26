@@ -11,7 +11,9 @@ public class CategoryController: ControllerBase
 {
     [HttpGet]
     [CategoriesActionFilter]
-    public async Task<IActionResult> GetUserCategories([FromServices] ICategoryRepository categoryRepository, [FromQuery] int firstId)
+    public async Task<IActionResult> GetUserCategories(
+        [FromServices] ICategoryRepository categoryRepository,
+        [FromQuery] int firstId)
     {
         var categories = await categoryRepository.GetNineUserCategoriesAsync(firstId);
         if (categories.Item2)

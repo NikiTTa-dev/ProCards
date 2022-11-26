@@ -22,8 +22,6 @@ public class CardRepository : ICardRepository
             .Where(c => c.Category.Name == categoryName && c.Category.IsUserCategory == isUserCategory)
             .OrderBy(r => EF.Functions.Random())
             .ToListAsync();
-        if (cards.Count == 0)
-            throw new CardNotFoundException("Card with this category not found.");
 
         return cards
             .Take(Math.Min(cards.Count, count))
@@ -37,9 +35,8 @@ public class CardRepository : ICardRepository
             .Where(c => c.Category.Name == categoryName && c.Category.IsUserCategory == isUserCategory)
             .OrderBy(r => EF.Functions.Random())
             .FirstOrDefaultAsync();
-        if (card == null)
-            throw new CardNotFoundException("Card not found.");
-        return card;
+
+        return card!;
     }
 
     public async Task<bool> IsCardExists(string categoryName, bool isUserCategory, string cardFirstSide)
@@ -56,27 +53,21 @@ public class CardRepository : ICardRepository
         return false;
     }
 
+    public async Task<bool> IsCardExists(int cardId, int categoryId)
+    {
+        return await _context.Categories.FindAsync(categoryId) != null &&
+             await _context.Cards.FindAsync(cardId) != null;
+    }
+
     public async Task InsertCardWithCategoryAsync(CardDal cardDal)
     {
-        if (cardDal.Category.IsUserCategory == false)
-            throw new ArgumentException("You can insert only user categories.");
-
-        if (cardDal.Id != null || cardDal.Category.Id != null)
-            throw new ArgumentException("Card must have no ids when inserting to db.");
-
-        if (cardDal.Grades != null && cardDal.Grades.Count > 0)
-            throw new ArgumentException("Card must have no grades when inserting to db.");
-
-        var category = await _context.Categories.FirstOrDefaultAsync(cat => cat.Name == cardDal.Category.Name &&
-                                                                            cat.IsUserCategory ==
-                                                                            cardDal.Category.IsUserCategory);
+        var category = await _context.Categories
+            .FirstOrDefaultAsync(cat => cat.Name == cardDal.Category.Name &&
+                                        cat.IsUserCategory ==
+                                        cardDal.Category.IsUserCategory);
 
         if (category != null)
-            if (await _context.Cards.FirstOrDefaultAsync(card =>
-                    card.CategoryId == category.Id && card.FirstSide == cardDal.FirstSide) != null)
-                throw new CardAlreadyExistsException("Card already exists.");
-            else
-                category.Cards = new List<CardDal> { cardDal };
+            category.Cards = new List<CardDal> { cardDal };
         else
             _context.Cards.Add(cardDal);
     }
