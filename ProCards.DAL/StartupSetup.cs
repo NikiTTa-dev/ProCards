@@ -8,5 +8,6 @@ public static class StartupSetup
 {
     public static void AddDbContext(this IServiceCollection services, string connectionString) =>
         services.AddDbContext<AppDbContext>(options =>
-            options.UseNpgsql(connectionString).EnableSensitiveDataLogging());
+            options.UseSqlite(connectionString).EnableSensitiveDataLogging()); //use for sqlite connection
+            //options.UseNpgsql(connectionString).EnableSensitiveDataLogging());
 }

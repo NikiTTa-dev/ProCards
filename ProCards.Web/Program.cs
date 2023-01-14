@@ -9,14 +9,9 @@ using ProCards.DAL;
 using ProCards.DAL.Context;
 using ProCards.DAL.Interfaces;
 using ProCards.DAL.Repositories;
+using ProCards.Web;
 using ProCards.Web.Logic;
 using Serilog;
-
-// TODO
-// 
-// FluentValidation
-//
-
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,7 +26,8 @@ builder.Services.AddControllers()
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-string connectionString = builder.Configuration.GetConnectionString("PostgreSqlConnection");
+//string connectionString = builder.Configuration.GetConnectionString("PostgreSqlConnection");
+string connectionString = builder.Configuration.GetConnectionString("SqliteConnection"); //use for sqlite connection
 builder.Services.AddDbContext(connectionString);
 
 builder.Services.AddScoped<ICardRepository, CardRepository>();
@@ -58,14 +54,6 @@ app.UseStaticFiles();
 app.UseAuthorization();
 
 app.UseExceptionHandler("/error");
-
-// app.Use(async (HttpContext context, Func<Task> next) =>
-// {
-//     using (var scope = app.Services.CreateScope())
-//     {
-//     }
-//     await next.Invoke();
-// });
 
 app.MapControllers();
 
